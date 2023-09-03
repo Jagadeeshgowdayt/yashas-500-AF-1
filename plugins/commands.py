@@ -154,7 +154,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/new_kannada_movie_2023")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/kannada_movie_request_backup")
              ]
                         ]
                     )
@@ -173,7 +173,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/new_kannada_movie_2023")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/kannada_movie_request_backup")
              ]
             ]
                     )
@@ -292,7 +292,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/new_kannada_movie_2023")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/kannada_movie_request_backup")
              ]
             ]
                 )
@@ -346,7 +346,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/new_kannada_movie_2023")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/kannada_movie_request_backup")
              ]
             ]
         )

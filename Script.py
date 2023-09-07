@@ -1,10 +1,5 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {} 😃, ɪ ᴀᴍ : <a href=https://t.me/{}>{}</a>.
- 
-I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ᴏʀ Sᴇᴀʀᴄʜ Pᴍ Aɴᴅ Eɴᴊᴏʏ 😍.
- 
- 
- ★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/new_kannada_movie_2023'>new_kannada_movie_2023� ⎚</a></b>"""
+    START_TXT = """    """
 
     HELP_TXT = """<b>Hᴇʏ {}
 ✨ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs ✨.</b>"""
@@ -251,7 +246,8 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
-
+bot updated...
+if face any problem contact devloper @jagadeeshgowda
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>

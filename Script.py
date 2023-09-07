@@ -12,7 +12,7 @@ running succsfully  </b>"""
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 - ꜱᴏᴜʀᴄᴇ - <a href="https://t.me/j7net">ʜᴇʀᴇ</a>
 Dᴇᴠᴇʟᴏᴘᴇʀ:
-- <a href="https://t.me/new_kannada_movie_2023">ᴊᴜsᴛ ᴏᴡɴᴇʀ</a> [oF this bot]</b>"""
+- <a href="https://t.me/kannada_movie_request_backup">ᴊᴜsᴛ ᴏᴡɴᴇʀ</a> [oF this bot]</b>"""
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
@@ -205,7 +205,7 @@ SLIVER 🥈      : 100 RS ( LIFETIME VALIDITY)
 
  SIZE: <code>{file_size}</code> 
   
- ᴊᴏɪɴ ɴᴏᴡ:<b> [new_kannada_movie_2023 ⎚](https://t.me/new_kannada_movie_2023)</b>"""
+ ᴊᴏɪɴ ɴᴏᴡ:<b> [kannada_movie_request_backup ⎚](https://t.me/kannada_movie_request_backup)</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
@@ -219,7 +219,7 @@ IMDb Data:
 
 🔖 sʜᴏʀᴛ : {plot}
 
-★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[new_kannada_movie_2023 ⎚](https://t.me/new_kannada_movie_2023)</b></b>"""
+★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[kannada_movie_request_backup ⎚](https://t.me/kannada_movie_request_backup)</b></b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""

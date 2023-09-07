@@ -1672,20 +1672,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.SINFO, show_alert=True)
 
     elif query.data == "start":
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    "⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬",
-                    url=f"http://t.me/{temp.U_NAME}?startgroup=true",
-                )
-            ],
-            [
-                InlineKeyboardButton("🎈 Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info"),
-                InlineKeyboardButton("⚜️ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url=GRP_LNK),
-            ],
-            [InlineKeyboardButton("✇ Jᴏɪɴ ᴍᴀɪɴ Cʜᴀɴɴᴇʟ ✇", url=CHNL_LNK)
-                ],[ InlineKeyboardButton(' Get premium ', url="https://kannada-new-movie.blogspot.com/2023/08/premium-pack-premium-pack-get-all-new.html")
-                  ]]
+        buttons = [[
+                    InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
+                ],[
+                     InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
+                ],[
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/Nairobi_vk18')
+                ],[
+                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id,

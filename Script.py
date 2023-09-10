@@ -141,8 +141,9 @@ Nᴀᴍᴇ - {}"""
     OWNER_INFO = """
 <b>☣️[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]☣️
     
-  bot owner :✰⋆ @vikranthronaaa ✰⋆
-  bot devloper...> @jagadeeshgowda  """
+• ɴᴀᴍᴇ : YASHASH
+• ᴜꜱᴇʀɴᴀᴍᴇ : @vikranthronaaa
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/vikranthronaaa'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>"""
 
 
     PAID_INFO = """

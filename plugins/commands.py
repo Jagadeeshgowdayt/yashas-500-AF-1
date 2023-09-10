@@ -27,7 +27,8 @@ async def start(client, message):
                 ],[
                      InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa')
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ]]
@@ -53,7 +54,8 @@ async def start(client, message):
                 ],[
                      InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa')
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ]]
@@ -99,7 +101,8 @@ async def start(client, message):
                 ],[
                      InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa')
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ]]

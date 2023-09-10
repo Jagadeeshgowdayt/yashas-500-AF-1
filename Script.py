@@ -12,7 +12,7 @@ running succsfully  </b>"""
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 - ꜱᴏᴜʀᴄᴇ - <a href="https://t.me/j7net">ʜᴇʀᴇ</a>
 Dᴇᴠᴇʟᴏᴘᴇʀ:
-- <a href="https://t.me/kannada_movie_request_backup">ᴊᴜsᴛ ᴏᴡɴᴇʀ</a> [oF this bot]</b>"""
+- <a href="https://t.me/vikranthronaaa">ᴊᴜsᴛ ᴏᴡɴᴇʀ</a> [oF this bot]</b>"""
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
@@ -126,7 +126,7 @@ Nᴀᴍᴇ - {}"""
 ᴇxᴀᴍᴘʟᴇ : Loki S01 or Loki S01E04 or Lucifer S03E24
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>
 
-#REQUEST_MOVIE = contact<b> @Nairobi_vk18 </b>
+#REQUEST_MOVIE = contact<b> @vikranthronaaa </b>
 """
 
     I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ɴᴀᴍᴇᴅ  {}.
@@ -141,7 +141,7 @@ Nᴀᴍᴇ - {}"""
     OWNER_INFO = """
 <b>☣️[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]☣️
     
-  bot owner :✰⋆ @Nairobi_vk18 ✰⋆
+  bot owner :✰⋆ @vikranthronaaa ✰⋆
   bot devloper...> @jagadeeshgowda  """
 
 
@@ -161,7 +161,7 @@ DIAMOND 🔹: 200RS   ( LIFETIME VALIDITY)
 GOLD 🥇        : 150 RS   ( LIFETIME VALIDITY)
 SLIVER 🥈      : 100 RS ( LIFETIME VALIDITY) 
 
-ɪғ ᴀɴʏᴏɴᴇ ɪɴᴛᴇʀᴇsᴛᴇᴅ ᴄᴏɴᴛᴀᴄᴛ [https://t.me/jagadeeshGowda , https://t.me/Nairobi_vk18]"""
+ɪғ ᴀɴʏᴏɴᴇ ɪɴᴛᴇʀᴇsᴛᴇᴅ ᴄᴏɴᴛᴀᴄᴛ [https://t.me/jagadeeshGowda , https://t.me/vikranthronaaa]"""
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
 
@@ -205,7 +205,7 @@ SLIVER 🥈      : 100 RS ( LIFETIME VALIDITY)
 
  SIZE: <code>{file_size}</code> 
   
- ᴊᴏɪɴ ɴᴏᴡ:<b> [kannada_movie_request_backup ⎚](https://t.me/kannada_movie_request_backup)</b>"""
+ ᴊᴏɪɴ ɴᴏᴡ:<b> [vikranthronaaa ⎚](https://t.me/vikranthronaaa)</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
@@ -219,7 +219,7 @@ IMDb Data:
 
 🔖 sʜᴏʀᴛ : {plot}
 
-★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[kannada_movie_request_backup ⎚](https://t.me/kannada_movie_request_backup)</b></b>"""
+★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[vikranthronaaa ⎚](https://t.me/vikranthronaaa)</b></b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""

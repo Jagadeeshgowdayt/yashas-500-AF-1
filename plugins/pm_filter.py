@@ -1020,7 +1020,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                     [
                                         InlineKeyboardButton(
                                             "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱",
-                                            url="https://t.me/kannada_movie_request_backup",
+                                            url="https://t.me/vikranthronaaa",
                                         )
                                     ],
                                 ]
@@ -1134,7 +1134,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton(
-                            "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱", url="https://t.me/kannada_movie_request_backup"
+                            "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱", url="https://t.me/vikranthronaaa"
                         )
                     ],
                 ]
@@ -1206,7 +1206,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.message.edit_text(
                     f"<b>Pʀᴏᴄᴇss Cᴏᴍᴘʟᴇᴛᴇᴅ ғᴏʀ ғɪʟᴇ ᴅᴇʟᴇᴛɪᴏɴ !\n\nSᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ {str(deleted)} ғɪʟᴇs ғʀᴏᴍ DB ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {keyword}.</b>"
                 )
-    elif query.data.startswith("killfileskannada_movie_request_backup"):
+    elif query.data.startswith("killfilesvikranthronaaa"):
         ident, pattern = query.data.split("#")
         await query.message.edit_text(
             f"<b>Fᴇᴛᴄʜɪɴɢ Fɪʟᴇs ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ `sᴇʀɪᴇs ғɪʟᴇs` ᴏɴ DB... Pʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>"
@@ -1969,7 +1969,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/kannada_movie_request_backup"),
+                InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/vikranthronaaa"),
             ]
         ]
         await client.edit_message_media(

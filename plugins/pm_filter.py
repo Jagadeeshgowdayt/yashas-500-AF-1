@@ -1672,12 +1672,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.SINFO, show_alert=True)
 
     elif query.data == "start":
-        buttons = [[
+        buttons =[[
                     InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
                 ],[
                      InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/Nairobi_vk18')
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ]]

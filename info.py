@@ -48,11 +48,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/c/1845700490/3")
-VERIFY2_URL = environ.get('VERIFY2_URL', "gplinks.in")
-VERIFY2_API = environ.get('VERIFY2_API', "cc5509e42b3192d08c4902f9616be7949c58d070")
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'cc5509e42b3192d08c4902f9616be7949c58d070')
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/c/")
+VERIFY2_URL = environ.get('VERIFY2_URL', "tnshort.net")
+VERIFY2_API = environ.get('VERIFY2_API', "8efca2a135b307a8dd8db651ed342f31c783c09a")
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
+SHORTLINK_API = environ.get('SHORTLINK_API', '8efca2a135b307a8dd8db651ed342f31c783c09a')
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")

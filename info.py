@@ -47,7 +47,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 
 # Others
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/c/")
 VERIFY2_URL = environ.get('VERIFY2_URL', "tnshort.net")
 VERIFY2_API = environ.get('VERIFY2_API', "8efca2a135b307a8dd8db651ed342f31c783c09a")

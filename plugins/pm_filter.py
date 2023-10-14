@@ -1753,6 +1753,280 @@ async def cb_handler(client: Client, query: CallbackQuery):
 [
     InlineKeyboardButton('Pakeezah (1972)', switch_inline_query_current_chat='Pakeezah (1972)'),
 ],[
+    InlineKeyboardButton('Sholay (1975)', switch_inline_query_current_chat='Sholay (1975)'),
+],
+[
+    InlineKeyboardButton('Mughal-e-Azam (1960)', switch_inline_query_current_chat='Mughal-e-Azam (1960)'),
+],
+[
+    InlineKeyboardButton('Dilwale Dulhania Le Jayenge (1995)', switch_inline_query_current_chat='Dilwale Dulhania Le Jayenge (1995)'),
+],
+[
+    InlineKeyboardButton('Mother India (1957)', switch_inline_query_current_chat='Mother India (1957)'),
+],
+[
+    InlineKeyboardButton('Lagaan (2001)', switch_inline_query_current_chat='Lagaan (2001)'),
+],
+[
+    InlineKeyboardButton('Rang De Basanti (2006)', switch_inline_query_current_chat='Rang De Basanti (2006)'),
+],
+[
+    InlineKeyboardButton('Kabhi Kabhie (1976)', switch_inline_query_current_chat='Kabhi Kabhie (1976)'),
+],
+[
+    InlineKeyboardButton('Kuch Kuch Hota Hai (1998)', switch_inline_query_current_chat='Kuch Kuch Hota Hai (1998)'),
+],
+[
+    InlineKeyboardButton('Zindagi Na Milegi Dobara (2011)', switch_inline_query_current_chat='Zindagi Na Milegi Dobara (2011)'),
+],
+[
+    InlineKeyboardButton('Pakeezah (1972)', switch_inline_query_current_chat='Pakeezah (1972)'),
+],
+[
+    InlineKeyboardButton('Anand (1971)', switch_inline_query_current_chat='Anand (1971)'),
+],
+[
+    InlineKeyboardButton('Shree 420 (1955)', switch_inline_query_current_chat='Shree 420 (1955)'),
+],
+[
+    InlineKeyboardButton('Queen (2014)', switch_inline_query_current_chat='Queen (2014)'),
+],
+[
+    InlineKeyboardButton('Mera Naam Joker (1970)', switch_inline_query_current_chat='Mera Naam Joker (1970)'),
+],
+[
+    InlineKeyboardButton('Black (2005)', switch_inline_query_current_chat='Black (2005)'),
+],
+[
+    InlineKeyboardButton('Taare Zameen Par (2007)', switch_inline_query_current_chat='Taare Zameen Par (2007)'),
+],
+[
+    InlineKeyboardButton('Shree 420 (1955)', switch_inline_query_current_chat='Shree 420 (1955)'),
+],
+[
+    InlineKeyboardButton('Devdas (2002)', switch_inline_query_current_chat='Devdas (2002)'),
+],
+[
+    InlineKeyboardButton('3 Idiots (2009)', switch_inline_query_current_chat='3 Idiots (2009)'),
+],
+[
+    InlineKeyboardButton('PK (2014)', switch_inline_query_current_chat='PK (2014)'),
+],
+[
+    InlineKeyboardButton('Chupke Chupke (1975)', switch_inline_query_current_chat='Chupke Chupke (1975)'),
+],
+[
+    InlineKeyboardButton('Dil Chahta Hai (2001)', switch_inline_query_current_chat='Dil Chahta Hai (2001)'),
+],
+[
+    InlineKeyboardButton('Anupama (1966)', switch_inline_query_current_chat='Anupama (1966)'),
+],
+[
+    InlineKeyboardButton('Udaan (2010)', switch_inline_query_current_chat='Udaan (2010)'),
+],
+[
+    InlineKeyboardButton('Bajrangi Bhaijaan (2015)', switch_inline_query_current_chat='Bajrangi Bhaijaan (2015)'),
+],
+[
+    InlineKeyboardButton('My Name Is Khan (2010)', switch_inline_query_current_chat='My Name Is Khan (2010)'),
+],
+[
+    InlineKeyboardButton('Raja Hindustani (1996)', switch_inline_query_current_chat='Raja Hindustani (1996)'),
+],
+[
+    InlineKeyboardButton('Dil To Pagal Hai (1997)', switch_inline_query_current_chat='Dil To Pagal Hai (1997)'),
+],
+[
+    InlineKeyboardButton('Jo Jeeta Wohi Sikandar (1992)', switch_inline_query_current_chat='Jo Jeeta Wohi Sikandar (1992)'),
+],
+[
+    InlineKeyboardButton('Piku (2015)', switch_inline_query_current_chat='Piku (2015)'),
+],
+[
+    InlineKeyboardButton('Rocket Singh: Salesman of the Year (2009)', switch_inline_query_current_chat='Rocket Singh: Salesman of the Year (2009)'),
+],
+[
+    InlineKeyboardButton('Special 26 (2013)', switch_inline_query_current_chat='Special 26 (2013)'),
+],
+[
+    InlineKeyboardButton('Dilwale (2015)', switch_inline_query_current_chat='Dilwale (2015)'),
+],
+[
+    InlineKeyboardButton('Tumhari Sulu (2017)', switch_inline_query_current_chat='Tumhari Sulu (2017)'),
+],
+
+
+Certainly! Here's an additional list of 40 movie names with their respective inline keyboard buttons:
+
+```python
+[
+    InlineKeyboardButton('Kabhi Khushi Kabhie Gham (2001)', switch_inline_query_current_chat='Kabhi Khushi Kabhie Gham (2001)'),
+],
+[
+    InlineKeyboardButton('Satyam Shivam Sundaram (1978)', switch_inline_query_current_chat='Satyam Shivam Sundaram (1978)'),
+],
+[
+    InlineKeyboardButton('Dil Dhadakne Do (2015)', switch_inline_query_current_chat='Dil Dhadakne Do (2015)'),
+],
+[
+    InlineKeyboardButton('Dabangg (2010)', switch_inline_query_current_chat='Dabangg (2010)'),
+],
+[
+    InlineKeyboardButton('Ghajini (2008)', switch_inline_query_current_chat='Ghajini (2008)'),
+],
+[
+    InlineKeyboardButton('Kaagaz Ke Phool (1959)', switch_inline_query_current_chat='Kaagaz Ke Phool (1959)'),
+],
+[
+    InlineKeyboardButton('Hum Aapke Hain Koun..! (1994)', switch_inline_query_current_chat='Hum Aapke Hain Koun..! (1994)'),
+],
+[
+    InlineKeyboardButton('Wake Up Sid (2009)', switch_inline_query_current_chat='Wake Up Sid (2009)'),
+],
+[
+    InlineKeyboardButton('Munna Bhai M.B.B.S. (2003)', switch_inline_query_current_chat='Munna Bhai M.B.B.S. (2003)'),
+],
+[
+    InlineKeyboardButton('Piku (2015)', switch_inline_query_current_chat='Piku (2015)'),
+],
+[
+    InlineKeyboardButton('Chupke Chupke (1975)', switch_inline_query_current_chat='Chupke Chupke (1975)'),
+],
+[
+    InlineKeyboardButton('Dilwale (2015)', switch_inline_query_current_chat='Dilwale (2015)'),
+],
+[
+    InlineKeyboardButton('Deewaar (1975)', switch_inline_query_current_chat='Deewaar (1975)'),
+],
+[
+    InlineKeyboardButton('Jo Jeeta Wohi Sikandar (1992)', switch_inline_query_current_chat='Jo Jeeta Wohi Sikandar (1992)'),
+],
+[
+    InlineKeyboardButton('Mohenjo Daro (2016)', switch_inline_query_current_chat='Mohenjo Daro (2016)'),
+],
+[
+    InlineKeyboardButton('Guddi (1971)', switch_inline_query_current_chat='Guddi (1971)'),
+],
+[
+    InlineKeyboardButton('Kabhi Alvida Naa Kehna (2006)', switch_inline_query_current_chat='Kabhi Alvida Naa Kehna (2006)'),
+],
+[
+    InlineKeyboardButton('Pardes (1997)', switch_inline_query_current_chat='Pardes (1997)'),
+],
+[
+    InlineKeyboardButton('Udta Punjab (2016)', switch_inline_query_current_chat='Udta Punjab (2016)'),
+],
+[
+    InlineKeyboardButton('Koi Mil Gaya (2003)', switch_inline_query_current_chat='Koi Mil Gaya (2003)'),
+],
+[
+    InlineKeyboardButton('Tumhari Sulu (2017)', switch_inline_query_current_chat='Tumhari Sulu (2017)'),
+],
+[
+    InlineKeyboardButton('Queen (2014)', switch_inline_query_current_chat='Queen (2014)'),
+],
+[
+    InlineKeyboardButton('Dhoom (2004)', switch_inline_query_current_chat='Dhoom (2004)'),
+],
+[
+    InlineKeyboardButton('Rockstar (2011)', switch_inline_query_current_chat='Rockstar (2011)'),
+],
+[
+    InlineKeyboardButton('Tum Bin (2001)', switch_inline_query_current_chat='Tum Bin (2001)'),
+],
+[
+    InlineKeyboardButton('Zubeidaa (2001)', switch_inline_query_current_chat='Zubeidaa (2001)'),
+],
+[
+    InlineKeyboardButton('Lage Raho Munna Bhai (2006)', switch_inline_query_current_chat='Lage Raho Munna Bhai (2006)'),
+],
+[
+    InlineKeyboardButton('Dhoom 2 (2006)', switch_inline_query_current_chat='Dhoom 2 (2006)'),
+],
+[
+    InlineKeyboardButton('Devdas (2002)', switch_inline_query_current_chat='Devdas (2002)'),
+],
+[
+    InlineKeyboardButton('Hum Dil De Chuke Sanam (1999)', switch_inline_query_current_chat='Hum Dil De Chuke Sanam (1999)'),
+],
+[
+    InlineKeyboardButton('Pink (2016)', switch_inline_query_current_chat='Pink (2016)'),
+],
+[
+    InlineKeyboardButton('Kabhi Haan Kabhi Naa (1994)', switch_inline_query_current_chat='Kabhi Haan Kabhi Naa (1994)'),
+],
+[
+    InlineKeyboardButton('Bombay (1995)', switch_inline_query_current_chat='Bombay (1995)'),
+],
+[
+    InlineKeyboardButton('Bombay Velvet (2015)', switch_inline_query_current_chat
+
+='Bombay Velvet (2015)'),
+],
+[
+    InlineKeyboardButton('Chak De! India (2007)', switch_inline_query_current_chat='Chak De! India (2007)'),
+],
+[
+    InlineKeyboardButton('Dil Se.. (1998)', switch_inline_query_current_chat='Dil Se.. (1998)'),
+],
+[
+    InlineKeyboardButton('Dilwale (2015)', switch_inline_query_current_chat='Dilwale (2015)'),
+],
+[
+    InlineKeyboardButton('Darr (1993)', switch_inline_query_current_chat='Darr (1993)'),
+],
+[
+    InlineKeyboardButton('Dosti (1964)', switch_inline_query_current_chat='Dosti (1964)'),
+],
+[
+    InlineKeyboardButton('Fanaa (2006)', switch_inline_query_current_chat='Fanaa (2006)'),
+],
+
+
+[
+    InlineKeyboardButton('Ganga Jamuna (1961)', switch_inline_query_current_chat='Ganga Jamuna (1961)'),
+],
+[
+    InlineKeyboardButton('Golmaal: Fun Unlimited (2006)', switch_inline_query_current_chat='Golmaal: Fun Unlimited (2006)'),
+],
+[
+    InlineKeyboardButton('Hey Ram (2000)', switch_inline_query_current_chat='Hey Ram (2000)'),
+],
+[
+    InlineKeyboardButton('Kabhi Alvida Naa Kehna (2006)', switch_inline_query_current_chat='Kabhi Alvida Naa Kehna (2006)'),
+],
+[
+    InlineKeyboardButton('Khamoshi: The Musical (1996)', switch_inline_query_current_chat='Khamoshi: The Musical (1996)'),
+],
+[
+    InlineKeyboardButton('Kurbaan (1991)', switch_inline_query_current_chat='Kurbaan (1991)'),
+],
+[
+    InlineKeyboardButton('Lamhe (1991)', switch_inline_query_current_chat='Lamhe (1991)'),
+],
+[
+    InlineKeyboardButton('Lajja (2001)', switch_inline_query_current_chat='Lajja (2001)'),
+],
+[
+    InlineKeyboardButton('Mary Kom (2014)', switch_inline_query_current_chat='Mary Kom (2014)'),
+],
+[
+    InlineKeyboardButton('Rang De Basanti (2006)', switch_inline_query_current_chat='Rang De Basanti (2006)'),
+],
+[
+    InlineKeyboardButton('Sarfarosh (1999)', switch_inline_query_current_chat='Sarfarosh (1999)'),
+],
+[
+    InlineKeyboardButton('Udaan (2010)', switch_inline_query_current_chat='Udaan (2010)'),
+],
+[
+    InlineKeyboardButton('Wake Up Sid (2009)', switch_inline_query_current_chat='Wake Up Sid (2009)'),
+],
+[
+    InlineKeyboardButton('Omkara (2006)', switch_inline_query_current_chat='Omkara (2006)'),
+]
+
+            ,[
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs", callback_data="global_filters"),
             ],

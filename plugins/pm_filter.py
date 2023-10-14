@@ -1723,20 +1723,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
     #this is my
     elif query.data == "best1":
         buttons = [
-            [
-    InlineKeyboardButton('Sholay (1975)', switch_inline_query_current_chat='Sholay (1975)'),
+[
+    InlineKeyboardButton('Sholay (1975)', switch_inline_query_current_chat='Sholay (1975)')
 ],
 [
-    InlineKeyboardButton('Mughal-e-Azam (1960)', switch_inline_query_current_chat='Mughal-e-Azam (1960)'),
+    InlineKeyboardButton('Mughal-e-Azam (1960)', switch_inline_query_current_chat='Mughal-e-Azam (1960)')
 ],
 [
-    InlineKeyboardButton('Dilwale Dulhania Le Jayenge (1995)', switch_inline_query_current_chat='Dilwale Dulhania Le Jayenge (1995)'),
+    InlineKeyboardButton('Dilwale Dulhania Le Jayenge (1995)', switch_inline_query_current_chat='Dilwale Dulhania Le Jayenge (1995)')
 ],
 [
-    InlineKeyboardButton('Mother India (1957)', switch_inline_query_current_chat='Mother India (1957)'),
+    InlineKeyboardButton('Mother India (1957)', switch_inline_query_current_chat='Mother India (1957)')
 ],
 [
-    InlineKeyboardButton('Lagaan (2001)', switch_inline_query_current_chat='Lagaan (2001)'),
+    InlineKeyboardButton('Lagaan (2001)', switch_inline_query_current_chat='Lagaan (2001)')
 ],
 [
     InlineKeyboardButton('Rang De Basanti (2006)', switch_inline_query_current_chat='Rang De Basanti (2006)'),
@@ -1973,8 +1973,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
 [
     InlineKeyboardButton('Fanaa (2006)', switch_inline_query_current_chat='Fanaa (2006)'),
 ],
-
-
 [
     InlineKeyboardButton('Ganga Jamuna (1961)', switch_inline_query_current_chat='Ganga Jamuna (1961)'),
 ],
@@ -2016,13 +2014,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 ],
 [
     InlineKeyboardButton('Omkara (2006)', switch_inline_query_current_chat='Omkara (2006)'),
-]
-
-            ,[
+],[
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs", callback_data="global_filters"),
             ],
-        ]]
+        ]
 
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(

@@ -1853,13 +1853,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 ],
 [
     InlineKeyboardButton('Tumhari Sulu (2017)', switch_inline_query_current_chat='Tumhari Sulu (2017)'),
-],
-
-
-Certainly! Here's an additional list of 40 movie names with their respective inline keyboard buttons:
-
-```python
-[
+],[
     InlineKeyboardButton('Kabhi Khushi Kabhie Gham (2001)', switch_inline_query_current_chat='Kabhi Khushi Kabhie Gham (2001)'),
 ],
 [
@@ -1959,9 +1953,7 @@ Certainly! Here's an additional list of 40 movie names with their respective inl
     InlineKeyboardButton('Bombay (1995)', switch_inline_query_current_chat='Bombay (1995)'),
 ],
 [
-    InlineKeyboardButton('Bombay Velvet (2015)', switch_inline_query_current_chat
-
-='Bombay Velvet (2015)'),
+    InlineKeyboardButton('Bombay Velvet (2015)', switch_inline_query_current_chat='Bombay Velvet (2015)'),
 ],
 [
     InlineKeyboardButton('Chak De! India (2007)', switch_inline_query_current_chat='Chak De! India (2007)'),
@@ -2030,7 +2022,7 @@ Certainly! Here's an additional list of 40 movie names with their respective inl
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs", callback_data="global_filters"),
             ],
-        ]
+        ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(

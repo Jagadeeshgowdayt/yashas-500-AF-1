@@ -1,4 +1,4 @@
-import os
+import os 
 import logging
 import random
 import asyncio
@@ -17,22 +17,120 @@ import base64
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
-skip_series = True
+
+@Client.on_message(filters.command("new_movies") & filters.incoming)
+async def new_movies(client, message):
+        buttons = [[
+                    InlineKeyboardButton('1', switch_inline_query_current_chat='Good Night'),
+                    InlineKeyboardButton('2', switch_inline_query_current_chat='Vikipedia'),
+                    InlineKeyboardButton('3', switch_inline_query_current_chat='Oru Nalla Naal Paathu')
+        ],[
+                    InlineKeyboardButton('4', switch_inline_query_current_chat='Shaakuntalam'),
+                    InlineKeyboardButton('5', switch_inline_query_current_chat='Wolfhound'),
+                    InlineKeyboardButton('6', switch_inline_query_current_chat='Anuragam')
+        ],[
+                    InlineKeyboardButton('7', switch_inline_query_current_chat='Sankarabharanam'),
+                    InlineKeyboardButton('8', switch_inline_query_current_chat='WOW'),
+                    InlineKeyboardButton('9', switch_inline_query_current_chat='Savitri')
+        ],[
+                    InlineKeyboardButton('10', switch_inline_query_current_chat='Uncharted'),
+                    InlineKeyboardButton('11', switch_inline_query_current_chat='Thandatti'),
+                    InlineKeyboardButton('12', switch_inline_query_current_chat='')
+        ],[
+                    InlineKeyboardButton('13', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('14', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('15', switch_inline_query_current_chat='')
+        ],[
+                    InlineKeyboardButton(text="❌️𝖢𝗅𝗈𝗌𝖾❌️", callback_data="close_data")
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.RECENT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+@Client.on_message(filters.command("serial") & filters.incoming)
+async def serial(client, message):
+        buttons = [[
+                    InlineKeyboardButton(text="𝖢𝗅𝗈𝗌𝖾", callback_data="close_data")
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.SERIAL.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+@Client.on_message(filters.command("movies") & filters.incoming)
+async def movies(client, message):
+        buttons = [[
+                    InlineKeyboardButton('Hero List', callback_data="hero"),
+                ],[
+                    InlineKeyboardButton('coming up', callback_data='year')
+        ],[
+                    InlineKeyboardButton('coming up', callback_data='genres')
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.MOVIES.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+@Client.on_message(filters.command("wwr") & filters.incoming)
+async def serials(client, message):
+        buttons = [[
+                    InlineKeyboardButton('Season 1', callback_data='wwr1'),
+                    InlineKeyboardButton('Season 2', callback_data='wwr2') 
+        ],[
+                    InlineKeyboardButton('Season 3', callback_data='wwr3'),
+                    InlineKeyboardButton('Season 4', callback_data='wwr4') 
+        ],[
+                    InlineKeyboardButton('Season 5', callback_data='wwr5'),
+                    InlineKeyboardButton('❌', callback_data='ambh1') 
+        ],[
+                    InlineKeyboardButton(text="❌𝖢𝗅𝗈𝗌𝖾❌", callback_data="close_data")
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.WWR.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+@Client.on_message(filters.command("how_to_use") & filters.incoming)
+async def how_to_use(client, message):
+        buttons = [[
+                    InlineKeyboardButton(text="❌️𝖢𝗅𝗈𝗌𝖾❌️", callback_data="close_data")
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.HOW.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
-                ],[
-                    InlineKeyboardButton('〄 Hindi', callback_data='help')
-                ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
-                     InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
-                ],[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ]]
+                    InlineKeyboardButton('Channel and Group', url='https://t.me/addlist/AaU4Pcvtd2BkNmVl') 
+        ],[
+                    InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -50,16 +148,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('RVASP', url='http://t.me/Kannada_Movies_RVASP')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
+                    InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
-                     InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
-                ],[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -76,7 +173,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
+                    "❆ ನಮ್ಮ ಬ್ಯಾಕ್-ಅಪ್ ಚಾನೆಲ್‌ಗೆ ಸೇರಿ ❆", url=invite_link.invite_link
                 )
             ]
         ]
@@ -85,28 +182,27 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton("🔄 ಮೂವಿ ಪಡೆಯಿರಿ 🔄", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton("🔄 ಮೂವಿ ಪಡೆಯಿರಿ 🔄", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ sᴏ ʏᴏᴜ ᴅᴏɴ'ᴛ ɢᴇᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ғɪʟᴇ...\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ғɪʟᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴀɴᴅ ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '↻ Tʀʏ Aɢᴀɪɴ' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ...\n\nTʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ғɪʟᴇs...**",
+            text="**ನೀವು ನಮ್ಮ ಬ್ಯಾಕ್-ಅಪ್ ಚಾನೆಲ್ ನಲ್ಲಿ ಇಲ್ಲಿರುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ನೀವು ಚಲನಚಿತ್ರ ಫೈಲ್‌ಗಳನ್ನು ಪಡೆಯಲಾಗುವುದಿಲ್ಲ...\n\nಚಲನಚಿತ್ರ ಫೈಲ್‌ಗಳನ್ನು ಬಯಸುವಿರಿದ್ದರೆ, ಕೆಳಗಿನ '❆ ನಮ್ಮ ಬ್ಯಾಕ್-ಅಪ್ ಚಾನೆಲ್‌ಗೆ ಸೇರಿ ❆' ಬಟನ್‌ಗೆ ಕ್ಲಿಕ್ ಮಾಡಿ ನಮ್ಮ ಬ್ಯಾಕ್-ಅಪ್ ಚಾನೆಲ್‌ಗೆ ಸೇರಿ, ನಂತರ '🔄 ಮೂವಿ ಪಡೆಯಿರಿ 🔄' ಬಟನ್‌ಗೆ ಕ್ಲಿಕ್ ಮಾಡಿ...\n\nನಂತರ ನೀವು ಚಲನಚಿತ್ರ ಫೈಲ್‌ಗಳನ್ನು ಪಡೆಯುವಿರಿ...**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('RVASP', url='http://t.me/Kannada_Movies_RVASP')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
+                    InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
-                     InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
-                ],[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -155,11 +251,11 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-              #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
-           ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
-             ]
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                       ],[
+                          InlineKeyboardButton("💛❤", url="https://graph.org/file/4add35bca501767e8428f.jpg")
+                         ]
                         ]
                     )
                 )
@@ -174,12 +270,12 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-              #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
-           ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
-             ]
-            ]
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                       ],[
+                          InlineKeyboardButton("💛❤", url="https://graph.org/file/4add35bca501767e8428f.jpg")
+                         ]
+                        ]
                     )
                 )
             except Exception as e:
@@ -250,7 +346,7 @@ async def start(client, message):
                 ]]
                 await verify_user(client, userid, token)
                 await message.reply_text(
-                    text=f"<b>Hᴇʏ {message.from_user.mention}, Yᴏᴜ ᴀʀᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ 🥳!\nNᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴀʟʟ ᴍᴏᴠɪᴇs ᴛɪʟʟ ᴛʜᴇ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴡʜɪᴄʜ ɪs ᴀғᴛᴇʀ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ✨.</b>",
+                    text=f"<b>Hᴇʏ {message.from_user.mention}, Yᴏᴜ ᴀʀᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ !\nNᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴀʟʟ ᴍᴏᴠɪᴇs ᴛɪʟʟ ᴛʜᴇ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴡʜɪᴄʜ ɪs ᴀғᴛᴇʀ 2 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ.</b>",
                     protect_content=True if PROTECT_CONTENT else False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -259,7 +355,7 @@ async def start(client, message):
                 InlineKeyboardButton("Get File", url=f"https://telegram.me/{temp.U_NAME}?start=files_{fileid}")
             ]]
             await message.reply_text(
-                text=f"<b>Hᴇʏ {message.from_user.mention}, Yᴏᴜ ᴀʀᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ 🥳!\nNᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴀʟʟ ᴍᴏᴠɪᴇs ᴛɪʟʟ ᴛʜᴇ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴡʜɪᴄʜ ɪs ᴀғᴛᴇʀ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ✨.</b>",
+                text=f"<b>Hᴇʏ {message.from_user.mention}, Yᴏᴜ ᴀʀᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ !\nNᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴀʟʟ ᴍᴏᴠɪᴇs ᴛɪʟʟ ᴛʜᴇ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴡʜɪᴄʜ ɪs ᴀғᴛᴇʀ 2 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ.</b>",
                 protect_content=True if PROTECT_CONTENT else False,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
@@ -277,11 +373,11 @@ async def start(client, message):
         try:
             if IS_VERIFY and not await check_verification(client, message.from_user.id):
                 btn = [[
-                    InlineKeyboardButton("download link", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id)),
-                    InlineKeyboardButton("sample video", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
+                    InlineKeyboardButton("Vᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id)),
+                    InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=HOW_TO_VERIFY)
                 ]]
                 await message.reply_text(
-                    text="<b>👇👇👇👇</b>",
+                    text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 2 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
                     protect_content=True if PROTECT_CONTENT else False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -293,12 +389,12 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-              #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
-           ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
-             ]
-            ]
+                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                   ],[
+                      InlineKeyboardButton("💛❤", url="https://graph.org/file/4add35bca501767e8428f.jpg")
+                     ]
+                    ]
                 )
             )
             filetype = msg.media
@@ -315,7 +411,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('🧐 Nᴏ sᴜᴄʜ ғɪʟᴇ ᴇxɪsᴛ.')
+        return await message.reply('Nᴏ sᴜᴄʜ ғɪʟᴇ ᴇxɪsᴛ.')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -330,11 +426,11 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     if IS_VERIFY and not await check_verification(client, message.from_user.id):
         btn = [[
-            InlineKeyboardButton("download link", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id)),
-            InlineKeyboardButton("sample video", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id))
+            InlineKeyboardButton("Vᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id)),
+            InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=HOW_TO_VERIFY)
         ]]
         await message.reply_text(
-            text="<b>👇👇👇👇</b>",
+            text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 2 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
             protect_content=True if PROTECT_CONTENT else False,
             reply_markup=InlineKeyboardMarkup(btn)
         )
@@ -347,10 +443,10 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
+              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
+              InlineKeyboardButton("💛❤", url="https://graph.org/file/4add35bca501767e8428f.jpg")
              ]
             ]
         )
@@ -627,8 +723,8 @@ async def settings(client, message):
         ]
 
         btn = [[
-                InlineKeyboardButton("Oᴘᴇɴ Hᴇʀᴇ 🙃", callback_data=f"opnsetgrp#{grp_id}"),
-                InlineKeyboardButton("Oᴘᴇɴ Iɴ PM 😉", callback_data=f"opnsetpm#{grp_id}")
+                InlineKeyboardButton("Oᴘᴇɴ Hᴇʀᴇ ↓", callback_data=f"opnsetgrp#{grp_id}"),
+                InlineKeyboardButton("Oᴘᴇɴ Iɴ PM ⇲", callback_data=f"opnsetpm#{grp_id}")
               ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -821,38 +917,6 @@ async def deletemultiplefiles(bot, message):
         reply_markup=InlineKeyboardMarkup(btn),
         parse_mode=enums.ParseMode.HTML
     )
-@Client.on_message(filters.command("deleteseries") & filters.user(ADMINS))
-async def delete_series_files(bot, message):
-    chat_type = message.chat.type
-    if chat_type != enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡᴏɴ'ᴛ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘs. Iᴛ ᴏɴʟʏ ᴡᴏʀᴋs ᴏɴ ᴍʏ PM!</b>")
-    
-    try:
-        #pattern = r"(?i)(^|\W)(S|E)(\d+)(\b(?!\d)|(?=\D)|(?<=\d)(?=\D))"
-        pattern = r"S01E04"
-        files_to_delete = []
-
-        async for media in Media.find():
-            if re.search(pattern, media.file_name):
-                files_to_delete.append(media)
-
-        if not files_to_delete:
-            return await message.reply_text("<b>No series files found to delete.</b>")
-
-        btn = [[
-           InlineKeyboardButton("Yᴇs, Cᴏɴᴛɪɴᴜᴇ !", callback_data="killfilesfilmztube")
-           ],[
-           InlineKeyboardButton("Nᴏ, Aʙᴏʀᴛ ᴏᴘᴇʀᴀᴛɪᴏɴ !", callback_data="close_data")
-        ]]
-
-        await message.reply_text(
-            text="<b>Aʀᴇ ʏᴏᴜ sᴜʀᴇ? Dᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴛʜᴇ sᴇʀɪᴇs ғɪʟᴇs?\n\nNᴏᴛᴇ:- Tʜɪs ᴄᴏᴜʟᴅ ʙᴇ ᴀ ᴅᴇsᴛʀᴜᴄᴛɪᴠᴇ ᴀᴄᴛɪᴏɴ!</b>",
-            reply_markup=InlineKeyboardMarkup(btn),
-            parse_mode=enums.ParseMode.HTML
-        )
-    
-    except IndexError:
-        return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, Tʜᴇʀᴇ ɪs ɴᴏ sᴇʀɪᴇs ɪɴ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ!</b>")
 
 @Client.on_message(filters.command("shortlink") & filters.user(ADMINS))
 async def shortlink(bot, message):

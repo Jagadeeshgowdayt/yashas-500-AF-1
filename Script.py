@@ -63,8 +63,8 @@ Mahanayaka S01E03........"""
     MOVIES = """ENJOY"""
 
 
-    PUNITHRAJKUMAR = <b>ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್</b>
-     buttons = [[
+
+    PUNITHRAJKUMAR = [[
                     InlineKeyboardButton('1', switch_inline_query_current_chat='Good Night'),
                     InlineKeyboardButton('2', switch_inline_query_current_chat='Vikipedia'),
                     InlineKeyboardButton('3', switch_inline_query_current_chat='Oru Nalla Naal Paathu')
@@ -87,7 +87,6 @@ Mahanayaka S01E03........"""
         ],[
                     InlineKeyboardButton(text="❌️𝖢𝗅𝗈𝗌𝖾❌️", callback_data="close_data")
                   ]]
-
     SHANKARNAG = """<b>ಕರಾಟೆ ಕಿಂಗ್ ಶಂಕರ್ ನಾಗ್</b>
 <code>Ondanondu Kaladalli 1978</code>
 <code>I Love You 1979</code>

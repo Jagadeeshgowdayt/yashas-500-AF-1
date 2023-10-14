@@ -1700,7 +1700,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "best0":
         buttons = [
             [
-                InlineKeyboardButton("Mᴀɴᴜᴀʟ FIʟᴛᴇʀ", callback_data="manuelfilter"),
+                InlineKeyboardButton("best hindi movies", callback_data="best1"),
                 InlineKeyboardButton("Aᴜᴛᴏ FIʟᴛᴇʀ", callback_data="autofilter"),
             ],
             [
@@ -1720,6 +1720,56 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
+    #this is my
+    elif query.data == "best1":
+        buttons = [
+            [
+    InlineKeyboardButton('Sholay (1975)', switch_inline_query_current_chat='Sholay (1975)'),
+],
+[
+    InlineKeyboardButton('Mughal-e-Azam (1960)', switch_inline_query_current_chat='Mughal-e-Azam (1960)'),
+],
+[
+    InlineKeyboardButton('Dilwale Dulhania Le Jayenge (1995)', switch_inline_query_current_chat='Dilwale Dulhania Le Jayenge (1995)'),
+],
+[
+    InlineKeyboardButton('Mother India (1957)', switch_inline_query_current_chat='Mother India (1957)'),
+],
+[
+    InlineKeyboardButton('Lagaan (2001)', switch_inline_query_current_chat='Lagaan (2001)'),
+],
+[
+    InlineKeyboardButton('Rang De Basanti (2006)', switch_inline_query_current_chat='Rang De Basanti (2006)'),
+],
+[
+    InlineKeyboardButton('Kabhi Kabhie (1976)', switch_inline_query_current_chat='Kabhi Kabhie (1976)'),
+],
+[
+    InlineKeyboardButton('Kuch Kuch Hota Hai (1998)', switch_inline_query_current_chat='Kuch Kuch Hota Hai (1998)'),
+],
+[
+    InlineKeyboardButton('Zindagi Na Milegi Dobara (2011)', switch_inline_query_current_chat='Zindagi Na Milegi Dobara (2011)'),
+],
+[
+    InlineKeyboardButton('Pakeezah (1972)', switch_inline_query_current_chat='Pakeezah (1972)'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
+                InlineKeyboardButton("Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs", callback_data="global_filters"),
+            ],
+        ]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        await query.message.edit_text(
+            text=script.ALL_FILTERS.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+#end my
 
     elif query.data == "global_filters":
         buttons = [[InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="filters")]]

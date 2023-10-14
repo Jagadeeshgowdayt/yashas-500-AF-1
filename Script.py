@@ -63,37 +63,30 @@ Mahanayaka S01E03........"""
     MOVIES = """ENJOY"""
 
 
-    PUNITHRAJKUMAR = """<b>ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್</b>
-<code>appu 2002</code>
-<code>abhi 2003</code>
-<code>maurya 2004</code>
-<code>aakash 2005</code>
-<code>namma basava 2005</code>
-<code>ajay 2006</code>
-<code>arasu 2006</code>
-<code>milana</code>2007
-<code>bindaas 2008</code>
-<code>vamshi 2008</code>
-<code>raaj the show man 2009</code>
-<code>raam</code>2009
-<code>prithvi 2010</code>
-<code>jackie 2010</code>
-<code>hudugaru 2011</code>
-<code>paramathma 2011</code>
-<code>anna bond 2012</code>
-<code>yaare koogadali 2012</code>
-<code>ninnindale 2014</code>
-<code>power 2014</code>
-<code>mythri 2015</code>
-<code>rana vikrama 2015</code>
-<code>chakravyuha 2016</code>
-<code>Doddmane hudga 2016</code>
-<code>raajakumara 2017</code>
-<code>anjaniputra 2017</code>
-<code>natasaarvabhowma 2019</code>
-<code>yuvaratna 2021</code>
-<code>James 2022</code>
-<code>Gandhada Gudi 2022</code>"""
+    PUNITHRAJKUMAR = <b>ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್</b>
+     buttons = [[
+                    InlineKeyboardButton('1', switch_inline_query_current_chat='Good Night'),
+                    InlineKeyboardButton('2', switch_inline_query_current_chat='Vikipedia'),
+                    InlineKeyboardButton('3', switch_inline_query_current_chat='Oru Nalla Naal Paathu')
+        ],[
+                    InlineKeyboardButton('4', switch_inline_query_current_chat='Shaakuntalam'),
+                    InlineKeyboardButton('5', switch_inline_query_current_chat='Wolfhound'),
+                    InlineKeyboardButton('6', switch_inline_query_current_chat='Anuragam')
+        ],[
+                    InlineKeyboardButton('7', switch_inline_query_current_chat='Sankarabharanam'),
+                    InlineKeyboardButton('8', switch_inline_query_current_chat='WOW'),
+                    InlineKeyboardButton('9', switch_inline_query_current_chat='Savitri')
+        ],[
+                    InlineKeyboardButton('10', switch_inline_query_current_chat='Uncharted'),
+                    InlineKeyboardButton('11', switch_inline_query_current_chat='Thandatti'),
+                    InlineKeyboardButton('12', switch_inline_query_current_chat='')
+        ],[
+                    InlineKeyboardButton('13', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('14', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('15', switch_inline_query_current_chat='')
+        ],[
+                    InlineKeyboardButton(text="❌️𝖢𝗅𝗈𝗌𝖾❌️", callback_data="close_data")
+                  ]]
 
     SHANKARNAG = """<b>ಕರಾಟೆ ಕಿಂಗ್ ಶಂಕರ್ ನಾಗ್</b>
 <code>Ondanondu Kaladalli 1978</code>

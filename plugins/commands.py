@@ -25,7 +25,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
                 ],[
-                     InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
                      InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
                      InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
@@ -52,7 +52,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
                 ],[
-                     InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
                      InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
                      InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
@@ -99,7 +99,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('Sᴇᴀʀᴄʜ movie ☌', switch_inline_query_current_chat='')
                 ],[
-                     InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
                      InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
                      InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")

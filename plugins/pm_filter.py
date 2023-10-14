@@ -1697,7 +1697,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer(MSG_ALRT)
 
-    elif query.data == "filters":
+    elif query.data == "best0":
         buttons = [
             [
                 InlineKeyboardButton("Mᴀɴᴜᴀʟ FIʟᴛᴇʀ", callback_data="manuelfilter"),
@@ -1738,7 +1738,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [
             [
-                InlineKeyboardButton("best hindi movies", callback_data="filters"),
+                InlineKeyboardButton("best hindi movies", callback_data="best0"),
                 InlineKeyboardButton("Fɪʟᴇ Sᴛᴏʀᴇ", callback_data="store_file"),
             ],
             [

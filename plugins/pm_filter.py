@@ -1724,6 +1724,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "best1":
         buttons = [
 [
+    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")
+],
+[
     InlineKeyboardButton('Sholay (1975)', switch_inline_query_current_chat='Sholay (1975)')
 ],
 [

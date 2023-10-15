@@ -2398,10 +2398,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     InlineKeyboardButton('James', switch_inline_query_current_chat='James'),
     InlineKeyboardButton('Phantom', switch_inline_query_current_chat='Phantom'),
 ],
-[
-    InlineKeyboardButton('Kotigobba 3', switch_inline_query_current_chat='Kotigobba 3'),
-    InlineKeyboardButton('Hari Hara Veera Mallu', switch_inline_query_current_chat='Hari Hara Veera Mallu'),
-],[
+,[
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
         await client.edit_message_media(
             query.message.chat.id,
@@ -3828,7 +3825,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "kannada":
         btn = [
             [
-                InlineKeyboardButton("bestk", callback_data="bestk")
+                InlineKeyboardButton("best kannada movies", callback_data="bestk")
             ],[
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
             ],[

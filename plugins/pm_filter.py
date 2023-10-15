@@ -2053,7 +2053,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [
             [
-                InlineKeyboardButton("best hindi movies", callback_data="best0")
+                InlineKeyboardButton("best hindi movies", callback_data="best1")
             ],
             [
                 InlineKeyboardButton("Hero List", callback_data="herolist")
@@ -2061,8 +2061,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton(" categories-type", callback_data="type0")
             ],
             [
-                InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),
-                InlineKeyboardButton("Sᴛᴀᴛᴜs", callback_data="stats")
+                InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start")
             ]
         ]
 

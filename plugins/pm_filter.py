@@ -2053,12 +2053,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [
             [
-                InlineKeyboardButton("best hindi movies", callback_data="best0"),
-                InlineKeyboardButton("Fɪʟᴇ Sᴛᴏʀᴇ", callback_data="store_file"),
+                InlineKeyboardButton("best hindi movies", callback_data="best0")
             ],
             [
-                InlineKeyboardButton("Hero List", callback_data="herolist"),
-                InlineKeyboardButton("Exᴛʀᴀ Mᴏᴅs", callback_data="extra"),
+                InlineKeyboardButton("Hero List", callback_data="herolist"
+            ],[
+                InlineKeyboardButton(" categories / type", callback_data="type0"
             ],
             [
                 InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),
@@ -2202,6 +2202,116 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML,
         )
         #im add 
+    elif query.data == "Action":
+        buttons = [ [
+    InlineKeyboardButton('Sholay', switch_inline_query_current_chat='Sholay'),
+    InlineKeyboardButton('Deewar', switch_inline_query_current_chat='Deewar'),
+],
+[
+    InlineKeyboardButton('Dhoom', switch_inline_query_current_chat='Dhoom'),
+    InlineKeyboardButton('Singham', switch_inline_query_current_chat='Singham'),
+],
+[
+    InlineKeyboardButton('Dabangg', switch_inline_query_current_chat='Dabangg'),
+    InlineKeyboardButton('Baaghi', switch_inline_query_current_chat='Baaghi'),
+],
+[
+    InlineKeyboardButton('Don', switch_inline_query_current_chat='Don'),
+    InlineKeyboardButton('War', switch_inline_query_current_chat='War'),
+],
+[
+    InlineKeyboardButton('Kick', switch_inline_query_current_chat='Kick'),
+    InlineKeyboardButton('Gunday', switch_inline_query_current_chat='Gunday'),
+],
+[
+    InlineKeyboardButton('Ghajini', switch_inline_query_current_chat='Ghajini'),
+    InlineKeyboardButton('Khiladi', switch_inline_query_current_chat='Khiladi'),
+],
+[
+    InlineKeyboardButton('Rowdy Rathore', switch_inline_query_current_chat='Rowdy Rathore'),
+    InlineKeyboardButton('Wanted', switch_inline_query_current_chat='Wanted'),
+],
+[
+    InlineKeyboardButton('Simmba', switch_inline_query_current_chat='Simmba'),
+    InlineKeyboardButton('Shootout at Wadala', switch_inline_query_current_chat='Shootout at Wadala'),
+],
+[
+    InlineKeyboardButton('Singham Returns', switch_inline_query_current_chat='Singham Returns'),
+    InlineKeyboardButton('Ek Tha Tiger', switch_inline_query_current_chat='Ek Tha Tiger'),
+],
+[
+    InlineKeyboardButton('Ek Villain', switch_inline_query_current_chat='Ek Villain'),
+    InlineKeyboardButton('Chennai Express', switch_inline_query_current_chat='Chennai Express'),
+],
+[
+    InlineKeyboardButton('Agneepath', switch_inline_query_current_chat='Agneepath'),
+    InlineKeyboardButton('Baahubali: The Beginning', switch_inline_query_current_chat='Baahubali: The Beginning'),
+],
+[
+    InlineKeyboardButton('Baahubali 2: The Conclusion', switch_inline_query_current_chat='Baahubali 2: The Conclusion'),
+    InlineKeyboardButton('Bang Bang!', switch_inline_query_current_chat='Bang Bang!'),
+],
+[
+    InlineKeyboardButton('Krrish', switch_inline_query_current_chat='Krrish'),
+    InlineKeyboardButton('Krrish 3', switch_inline_query_current_chat='Krrish 3'),
+],
+[
+    InlineKeyboardButton('Baby', switch_inline_query_current_chat='Baby'),
+    InlineKeyboardButton('Rocky Handsome', switch_inline_query_current_chat='Rocky Handsome'),
+],
+[
+    InlineKeyboardButton('Commando: A One Man Army', switch_inline_query_current_chat='Commando: A One Man Army'),
+    InlineKeyboardButton('Singham 2', switch_inline_query_current_chat='Singham 2'),
+],
+[
+    InlineKeyboardButton('Gabbar Is Back', switch_inline_query_current_chat='Gabbar Is Back'),
+    InlineKeyboardButton('Bajrangi Bhaijaan', switch_inline_query_current_chat='Bajrangi Bhaijaan'),
+],
+[
+    InlineKeyboardButton('Sultan', switch_inline_query_current_chat='Sultan'),
+    InlineKeyboardButton('R... Rajkumar', switch_inline_query_current_chat='R... Rajkumar'),
+],
+[
+    InlineKeyboardButton('Dishoom', switch_inline_query_current_chat='Dishoom'),
+    InlineKeyboardButton('Force', switch_inline_query_current_chat='Force'),
+],
+[
+    InlineKeyboardButton('Uri: The Surgical Strike', switch_inline_query_current_chat='Uri: The Surgical Strike'),
+    InlineKeyboardButton('Brothers', switch_inline_query_current_chat='Brothers'),
+],
+[
+    InlineKeyboardButton('Ek Villain', switch_inline_query_current_chat='Ek Villain'),
+    InlineKeyboardButton('Goliyon Ki Raasleela Ram-Leela', switch_inline_query_current_chat='Goliyon Ki Raasleela Ram-Leela'),
+]
+,[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "type0":
+        buttons = [  [
+                InlineKeyboardButton("Action movies", callback_data="Action")
+            ],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
     elif query.data == "RanveerSingh":
         buttons = [ [
     InlineKeyboardButton('Band Baaja Baaraat', switch_inline_query_current_chat='Band Baaja Baaraat'),

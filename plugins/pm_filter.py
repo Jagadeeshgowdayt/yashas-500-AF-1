@@ -2201,6 +2201,363 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML,
         )
         #im add startme
+    elif query.data == "Thrillerk":
+        buttons = [ [
+    InlineKeyboardButton('RangiTaranga', switch_inline_query_current_chat='RangiTaranga'),
+    InlineKeyboardButton('U-Turn', switch_inline_query_current_chat='U-Turn'),
+],
+[
+    InlineKeyboardButton('Lucia', switch_inline_query_current_chat='Lucia'),
+    InlineKeyboardButton('Kavaludaari', switch_inline_query_current_chat='Kavaludaari'),
+],
+[
+    InlineKeyboardButton('Game', switch_inline_query_current_chat='Game'),
+    InlineKeyboardButton('Aa Karaala Ratri', switch_inline_query_current_chat='Aa Karaala Ratri'),
+],
+[
+    InlineKeyboardButton('Last Bus', switch_inline_query_current_chat='Last Bus'),
+    InlineKeyboardButton('Gultoo', switch_inline_query_current_chat='Gultoo'),
+],
+[
+    InlineKeyboardButton('Katheyondu Shuruvagide', switch_inline_query_current_chat='Katheyondu Shuruvagide'),
+    InlineKeyboardButton('Rajathandira', switch_inline_query_current_chat='Rajathandira'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Horrork":
+        buttons = [ [
+    InlineKeyboardButton('Aake', switch_inline_query_current_chat='Aake'),
+    InlineKeyboardButton('Karva', switch_inline_query_current_chat='Karva'),
+],
+[
+    InlineKeyboardButton('Mummy - Save Me', switch_inline_query_current_chat='Mummy - Save Me'),
+    InlineKeyboardButton('Raate', switch_inline_query_current_chat='Raate'),
+],
+[
+    InlineKeyboardButton('U-Turn', switch_inline_query_current_chat='U-Turn'),
+    InlineKeyboardButton('Rajkumari', switch_inline_query_current_chat='Rajkumari'),
+],
+[
+    InlineKeyboardButton('Bayalu Daari', switch_inline_query_current_chat='Bayalu Daari'),
+    InlineKeyboardButton('6-5=2', switch_inline_query_current_chat='6-5=2'),
+],
+[
+    InlineKeyboardButton('Tunaga Tunaga', switch_inline_query_current_chat='Tunaga Tunaga'),
+    InlineKeyboardButton('Kalpana', switch_inline_query_current_chat='Kalpana'),
+],
+[
+    InlineKeyboardButton('Charlie', switch_inline_query_current_chat='Charlie'),
+    InlineKeyboardButton('Preethi Prema Pranaya', switch_inline_query_current_chat='Preethi Prema Pranaya'),
+],
+[
+    InlineKeyboardButton('Kallara Santhe', switch_inline_query_current_chat='Kallara Santhe'),
+    InlineKeyboardButton('Chandralekha', switch_inline_query_current_chat='Chandralekha'),
+],
+[
+    InlineKeyboardButton('Dracula', switch_inline_query_current_chat='Dracula'),
+    InlineKeyboardButton('Mane Mane Kathe', switch_inline_query_current_chat='Mane Mane Kathe'),
+],
+[
+    InlineKeyboardButton('Gruha Bhojana', switch_inline_query_current_chat='Gruha Bhojana'),
+    InlineKeyboardButton('Nagavalli', switch_inline_query_current_chat='Nagavalli'),
+],
+[
+    InlineKeyboardButton('Malenadina Hudugi', switch_inline_query_current_chat='Malenadina Hudugi'),
+    InlineKeyboardButton('Baa Nalle Madhuchandrake', switch_inline_query_current_chat='Baa Nalle Madhuchandrake'),
+],
+[
+    InlineKeyboardButton('Hani Hani', switch_inline_query_current_chat='Hani Hani'),
+    InlineKeyboardButton('Kamarottu Checkpost', switch_inline_query_current_chat='Kamarottu Checkpost'),
+],
+[
+    InlineKeyboardButton('Mylari', switch_inline_query_current_chat='Mylari'),
+    InlineKeyboardButton('Sangliyana', switch_inline_query_current_chat='Sangliyana'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Romancek":
+        buttons = [ [
+    InlineKeyboardButton('Mungaru Male', switch_inline_query_current_chat='Mungaru Male'),
+    InlineKeyboardButton('Milana', switch_inline_query_current_chat='Milana'),
+],
+[
+    InlineKeyboardButton('Bhama Vijaya', switch_inline_query_current_chat='Bhama Vijaya'),
+    InlineKeyboardButton('Sanju Weds Geetha', switch_inline_query_current_chat='Sanju Weds Geetha'),
+],
+[
+    InlineKeyboardButton('Amruthavarshini', switch_inline_query_current_chat='Amruthavarshini'),
+    InlineKeyboardButton('Nanu Nanna Kanasu', switch_inline_query_current_chat='Nanu Nanna Kanasu'),
+],
+[
+    InlineKeyboardButton('Preethse Antha Pranaama', switch_inline_query_current_chat='Preethse Antha Pranaama'),
+    InlineKeyboardButton('Chaitrada Chandrama', switch_inline_query_current_chat='Chaitrada Chandrama'),
+],
+[
+    InlineKeyboardButton('Chinnari Mutha', switch_inline_query_current_chat='Chinnari Mutha'),
+    InlineKeyboardButton('Mussanje Maatu', switch_inline_query_current_chat='Mussanje Maatu'),
+],
+[
+    InlineKeyboardButton('Suntaragaali', switch_inline_query_current_chat='Suntaragaali'),
+    InlineKeyboardButton('Neenello Naanalle', switch_inline_query_current_chat='Neenello Naanalle'),
+],
+[
+    InlineKeyboardButton('Krishnan Love Story', switch_inline_query_current_chat='Krishnan Love Story'),
+    InlineKeyboardButton('Aa Dinagalu', switch_inline_query_current_chat='Aa Dinagalu'),
+],
+[
+    InlineKeyboardButton('Junglee', switch_inline_query_current_chat='Junglee'),
+    InlineKeyboardButton('Bhale Jodi', switch_inline_query_current_chat='Bhale Jodi'),
+],
+[
+    InlineKeyboardButton('Kannadada Kanda', switch_inline_query_current_chat='Kannadada Kanda'),
+    InlineKeyboardButton('Janumada Jodi', switch_inline_query_current_chat='Janumada Jodi'),
+],
+[
+    InlineKeyboardButton('Excuse Me', switch_inline_query_current_chat='Excuse Me'),
+    InlineKeyboardButton('Chandramukhi Pranasakhi', switch_inline_query_current_chat='Chandramukhi Pranasakhi'),
+],
+[
+    InlineKeyboardButton('Geleya', switch_inline_query_current_chat='Geleya'),
+    InlineKeyboardButton('Nannaseya Hoove', switch_inline_query_current_chat='Nannaseya Hoove'),
+],
+[
+    InlineKeyboardButton('Nodi Swamy Navirodu Hige', switch_inline_query_current_chat='Nodi Swamy Navirodu Hige'),
+    InlineKeyboardButton('Bhagyada Lakshmi Baramma', switch_inline_query_current_chat='Bhagyada Lakshmi Baramma'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Dramak":
+        buttons = [ [
+    InlineKeyboardButton('Lucia', switch_inline_query_current_chat='Lucia'),
+    InlineKeyboardButton('Ulidavaru Kandanthe', switch_inline_query_current_chat='Ulidavaru Kandanthe'),
+],
+[
+    InlineKeyboardButton('Kendasampige', switch_inline_query_current_chat='Kendasampige'),
+    InlineKeyboardButton('Rama Rama Re', switch_inline_query_current_chat='Rama Rama Re'),
+],
+[
+    InlineKeyboardButton('Naanu Avanalla...Avalu', switch_inline_query_current_chat='Naanu Avanalla...Avalu'),
+    InlineKeyboardButton('Thithi', switch_inline_query_current_chat='Thithi'),
+],
+[
+    InlineKeyboardButton('Harivu', switch_inline_query_current_chat='Harivu'),
+    InlineKeyboardButton('Manjari', switch_inline_query_current_chat='Manjari'),
+],
+[
+    InlineKeyboardButton('Ishtakamya', switch_inline_query_current_chat='Ishtakamya'),
+    InlineKeyboardButton('Ondu Motteya Kathe', switch_inline_query_current_chat='Ondu Motteya Kathe'),
+],
+[
+    InlineKeyboardButton('Godhi Banna Sadharana Mykattu', switch_inline_query_current_chat='Godhi Banna Sadharana Mykattu'),
+    InlineKeyboardButton('Karvva', switch_inline_query_current_chat='Karvva'),
+],
+[
+    InlineKeyboardButton('Kiragoorina Gayyaligalu', switch_inline_query_current_chat='Kiragoorina Gayyaligalu'),
+    InlineKeyboardButton('Sarkari Hi. Pra. Shaale, Kasaragodu, Koduge: Ramanna Rai', switch_inline_query_current_chat='Sarkari Hi. Pra. Shaale, Kasaragodu, Koduge: Ramanna Rai'),
+],
+[
+    InlineKeyboardButton('96', switch_inline_query_current_chat='96'),
+    InlineKeyboardButton('Birbal Trilogy: Case 1', switch_inline_query_current_chat='Birbal Trilogy: Case 1'),
+],
+[
+    InlineKeyboardButton('Rangitaranga', switch_inline_query_current_chat='Rangitaranga'),
+    InlineKeyboardButton('Nathicharami', switch_inline_query_current_chat='Nathicharami'),
+],
+[
+    InlineKeyboardButton('Dia', switch_inline_query_current_chat='Dia'),
+    InlineKeyboardButton('Bhinna', switch_inline_query_current_chat='Bhinna'),
+],
+[
+    InlineKeyboardButton('Popcorn Monkey Tiger', switch_inline_query_current_chat='Popcorn Monkey Tiger'),
+    InlineKeyboardButton('Love Mocktail', switch_inline_query_current_chat='Love Mocktail'),
+],
+[
+    InlineKeyboardButton('Bheemasena Nalamaharaja', switch_inline_query_current_chat='Bheemasena Nalamaharaja'),
+    InlineKeyboardButton('Avane Srimannarayana', switch_inline_query_current_chat='Avane Srimannarayana'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Comedyk":
+        buttons = [ [
+    InlineKeyboardButton('Ganeshana Maduve', switch_inline_query_current_chat='Ganeshana Maduve'),
+    InlineKeyboardButton('Nammura Mandara Hoove', switch_inline_query_current_chat='Nammura Mandara Hoove'),
+],
+[
+    InlineKeyboardButton('Operation Antha', switch_inline_query_current_chat='Operation Antha'),
+    InlineKeyboardButton('Ulta Palta', switch_inline_query_current_chat='Ulta Palta'),
+],
+[
+    InlineKeyboardButton('C.B.I Shankar', switch_inline_query_current_chat='C.B.I Shankar'),
+    InlineKeyboardButton('Guru', switch_inline_query_current_chat='Guru'),
+],
+[
+    InlineKeyboardButton('Bombat Hendthi', switch_inline_query_current_chat='Bombat Hendthi'),
+    InlineKeyboardButton('Karulina Kudi', switch_inline_query_current_chat='Karulina Kudi'),
+],
+[
+    InlineKeyboardButton('Krishna Nee Begane Baaro', switch_inline_query_current_chat='Krishna Nee Begane Baaro'),
+    InlineKeyboardButton('Police Story 2', switch_inline_query_current_chat='Police Story 2'),
+],
+[
+    InlineKeyboardButton('Ganesha Subramanya', switch_inline_query_current_chat='Ganesha Subramanya'),
+    InlineKeyboardButton('Olu Saar Bari Olu', switch_inline_query_current_chat='Olu Saar Bari Olu'),
+],
+[
+    InlineKeyboardButton('Manmatha Raja', switch_inline_query_current_chat='Manmatha Raja'),
+    InlineKeyboardButton('Thandege Thakka Maga', switch_inline_query_current_chat='Thandege Thakka Maga'),
+],
+[
+    InlineKeyboardButton('Garjane', switch_inline_query_current_chat='Garjane'),
+    InlineKeyboardButton('Golmaal Radhakrishna', switch_inline_query_current_chat='Golmaal Radhakrishna'),
+],
+[
+    InlineKeyboardButton('Kattegalu Saar Kattegalu', switch_inline_query_current_chat='Kattegalu Saar Kattegalu'),
+    InlineKeyboardButton('Gopi Krishna', switch_inline_query_current_chat='Gopi Krishna'),
+],
+[
+    InlineKeyboardButton('Aparoopada Athitigalu', switch_inline_query_current_chat='Aparoopada Athitigalu'),
+    InlineKeyboardButton('Harakeya Kuri', switch_inline_query_current_chat='Harakeya Kuri'),
+],
+[
+    InlineKeyboardButton('Dharani Mandala Madhyadolage', switch_inline_query_current_chat='Dharani Mandala Madhyadolage'),
+    InlineKeyboardButton('Nodi Swamy Navirodu Hige', switch_inline_query_current_chat='Nodi Swamy Navirodu Hige'),
+],
+[
+    InlineKeyboardButton('Kittu Puttu', switch_inline_query_current_chat='Kittu Puttu'),
+    InlineKeyboardButton('Ganesh', switch_inline_query_current_chat='Ganesh'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Actionk":
+        buttons = [ [
+    InlineKeyboardButton('Mankatha', switch_inline_query_current_chat='Mankatha'),
+    InlineKeyboardButton('Ugramm', switch_inline_query_current_chat='Ugramm'),
+],
+[
+    InlineKeyboardButton('KGF: Chapter 1', switch_inline_query_current_chat='KGF: Chapter 1'),
+    InlineKeyboardButton('Mufti', switch_inline_query_current_chat='Mufti'),
+],
+[
+    InlineKeyboardButton('Bhairava Geetha', switch_inline_query_current_chat='Bhairava Geetha'),
+    InlineKeyboardButton('Tagaru', switch_inline_query_current_chat='Tagaru'),
+],
+[
+    InlineKeyboardButton('Badmaash', switch_inline_query_current_chat='Badmaash'),
+    InlineKeyboardButton('Jigarthanda', switch_inline_query_current_chat='Jigarthanda'),
+],
+[
+    InlineKeyboardButton('Bajarangi', switch_inline_query_current_chat='Bajarangi'),
+    InlineKeyboardButton('Tyson', switch_inline_query_current_chat='Tyson'),
+],
+[
+    InlineKeyboardButton('Masterpiece', switch_inline_query_current_chat='Masterpiece'),
+    InlineKeyboardButton('Kalpana', switch_inline_query_current_chat='Kalpana'),
+],
+[
+    InlineKeyboardButton('Deadly Soma', switch_inline_query_current_chat='Deadly Soma'),
+    InlineKeyboardButton('Airavata', switch_inline_query_current_chat='Airavata'),
+],
+[
+    InlineKeyboardButton('Ramachari', switch_inline_query_current_chat='Ramachari'),
+    InlineKeyboardButton('Bhadra', switch_inline_query_current_chat='Bhadra'),
+],
+[
+    InlineKeyboardButton('Suryavamsha', switch_inline_query_current_chat='Suryavamsha'),
+    InlineKeyboardButton('Yajamana', switch_inline_query_current_chat='Yajamana'),
+],
+[
+    InlineKeyboardButton('Chingari', switch_inline_query_current_chat='Chingari'),
+    InlineKeyboardButton('Dasharatha', switch_inline_query_current_chat='Dasharatha'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "typek":
+        buttons = [
+            [
+                InlineKeyboardButton("Action", callback_data="Actionk"),
+                InlineKeyboardButton("Romance", callback_data="Romancek")
+            ],[
+                InlineKeyboardButton("Comedy ", callback_data="Comedyk"),
+                InlineKeyboardButton("Horror", callback_data="Horrork")
+            ],[
+                InlineKeyboardButton("Drama", callback_data="Dramak"),
+                InlineKeyboardButton("Thrillerk", callback_data="Thrillerk")
+            ],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")
+            ]
+        ]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    
     elif query.data == "Shivrajkumar":
         buttons = [ [
     InlineKeyboardButton('Om', switch_inline_query_current_chat='Om'),
@@ -4432,7 +4789,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
                 InlineKeyboardButton("Hero List ", callback_data="herolistk")
             ],[
-                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+                InlineKeyboardButton("categories - type", callback_data="typek")
             ],[
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
             ]

@@ -2178,13 +2178,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ], [
                 InlineKeyboardButton("Aamir Khan", callback_data="AamirKhan"),
                 InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan")
-            ], [
+            ],[
                 InlineKeyboardButton("Akshay Kumar", callback_data="AkshayKumar"),
                 InlineKeyboardButton("Ranbir Kapoor", callback_data="RanbirKapoor")
             ],[
                 InlineKeyboardButton("Hrithik Roshan", callback_data="HrithikRoshan"),
                 InlineKeyboardButton("Ajay Devgn", callback_data="AjayDevgn")
-            ]
+            ],
             [
                 InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),
                 InlineKeyboardButton("Cʟᴏsᴇ", callback_data="close_data")

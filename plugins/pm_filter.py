@@ -2174,7 +2174,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "herolist":
         buttons = [ [
                 InlineKeyboardButton("Shah Rukh Khan", callback_data="srk"),
-                InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan"
+                InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan")
             ],
             [
                 InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),

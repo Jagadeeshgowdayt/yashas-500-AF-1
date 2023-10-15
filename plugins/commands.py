@@ -29,7 +29,7 @@ async def start(client, message):
                     InlineKeyboardButton('〄 Hindi', callback_data='help')
                 ],[
                      InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
-                     InlineKeyboardButton('kannada', callback_data="owner_info")
+                     InlineKeyboardButton('kannada', callback_data="kannada")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ]]

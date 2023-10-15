@@ -2174,7 +2174,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "herolist":
         buttons = [ [
                 InlineKeyboardButton("Shah Rukh Khan", callback_data="srk"),
-                InlineKeyboardButton("Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", callback_data="source")
+                InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan"
             ],
             [
                 InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),
@@ -2192,6 +2192,152 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML,
         )
         #im add 
+    elif query.data == "SalmanKhan":
+        buttons = [ [
+    InlineKeyboardButton('Biwi Ho To Aisi', switch_inline_query_current_chat='Biwi Ho To Aisi'),
+    InlineKeyboardButton('Maine Pyar Kiya', switch_inline_query_current_chat='Maine Pyar Kiya'),
+],
+[
+    InlineKeyboardButton('Baaghi: A Rebel for Love', switch_inline_query_current_chat='Baaghi: A Rebel for Love'),
+    InlineKeyboardButton('Sanam Bewafa', switch_inline_query_current_chat='Sanam Bewafa'),
+],
+[
+    InlineKeyboardButton('Patthar Ke Phool', switch_inline_query_current_chat='Patthar Ke Phool'),
+    InlineKeyboardButton('Kurbaan', switch_inline_query_current_chat='Kurbaan'),
+],
+[
+    InlineKeyboardButton('Karan Arjun', switch_inline_query_current_chat='Karan Arjun'),
+    InlineKeyboardButton('Chaand Kaa Tukdaa', switch_inline_query_current_chat='Chaand Kaa Tukdaa'),
+],
+[
+    InlineKeyboardButton('Jeet', switch_inline_query_current_chat='Jeet'),
+    InlineKeyboardButton('Karan Arjun', switch_inline_query_current_chat='Karan Arjun'),
+],
+[
+    InlineKeyboardButton('Judwaa', switch_inline_query_current_chat='Judwaa'),
+    InlineKeyboardButton('Dushman Duniya Ka', switch_inline_query_current_chat='Dushman Duniya Ka'),
+],
+[
+    InlineKeyboardButton('Jeet', switch_inline_query_current_chat='Jeet'),
+    InlineKeyboardButton('Dus', switch_inline_query_current_chat='Dus'),
+],
+[
+    InlineKeyboardButton('Karan Arjun', switch_inline_query_current_chat='Karan Arjun'),
+    InlineKeyboardButton('Pyaar Kiya To Darna Kya', switch_inline_query_current_chat='Pyaar Kiya To Darna Kya'),
+],
+[
+    InlineKeyboardButton('Bandhan', switch_inline_query_current_chat='Bandhan'),
+    InlineKeyboardButton('Biwi No. 1', switch_inline_query_current_chat='Biwi No. 1'),
+],
+[
+    InlineKeyboardButton('Hum Dil De Chuke Sanam', switch_inline_query_current_chat='Hum Dil De Chuke Sanam'),
+    InlineKeyboardButton('Dulhan Hum Le Jayenge', switch_inline_query_current_chat='Dulhan Hum Le Jayenge'),
+],
+[
+    InlineKeyboardButton('Har Dil Jo Pyar Karega', switch_inline_query_current_chat='Har Dil Jo Pyar Karega'),
+    InlineKeyboardButton('Chal Mere Bhai', switch_inline_query_current_chat='Chal Mere Bhai'),
+],
+[
+    InlineKeyboardButton('Har Dil Jo Pyar Karega', switch_inline_query_current_chat='Har Dil Jo Pyar Karega'),
+    InlineKeyboardButton('Kahin Pyaar Na Ho Jaaye', switch_inline_query_current_chat='Kahin Pyaar Na Ho Jaaye'),
+],
+[
+    InlineKeyboardButton('Chori Chori Chupke Chupke', switch_inline_query_current_chat='Chori Chori Chupke Chupke'),
+    InlineKeyboardButton('Har Dil Jo Pyar Karega', switch_inline_query_current_chat='Har Dil Jo Pyar Karega'),
+],
+[
+    InlineKeyboardButton('Tumko Na Bhool Paayenge', switch_inline_query_current_chat='Tumko Na Bhool Paayenge'),
+    InlineKeyboardButton('Kahin Pyaar Na Ho Jaaye', switch_inline_query_current_chat='Kahin Pyaar Na Ho Jaaye'),
+],
+[
+    InlineKeyboardButton('Tere Naam', switch_inline_query_current_chat='Tere Naam'),
+    InlineKeyboardButton('Baghban', switch_inline_query_current_chat='Baghban'),
+],
+[
+    InlineKeyboardButton('Garv: Pride and Honour', switch_inline_query_current_chat='Garv: Pride and Honour'),
+    InlineKeyboardButton('Mujhse Shaadi Karogi', switch_inline_query_current_chat='Mujhse Shaadi Karogi'),
+],
+[
+    InlineKeyboardButton('Lucky: No Time for Love', switch_inline_query_current_chat='Lucky: No Time for Love'),
+    InlineKeyboardButton('Maine Pyaar Kyun Kiya?', switch_inline_query_current_chat='Maine Pyaar Kyun Kiya?'),
+],
+[
+    InlineKeyboardButton('No Entry', switch_inline_query_current_chat='No Entry'),
+    InlineKeyboardButton('Kyon Ki', switch_inline_query_current_chat='Kyon Ki'),
+],
+[
+    InlineKeyboardButton('Shaadi Karke Phas Gaya Yaar', switch_inline_query_current_chat='Shaadi Karke Phas Gaya Yaar'),
+    InlineKeyboardButton('Jaan-E-Mann', switch_inline_query_current_chat='Jaan-E-Mann'),
+],
+[
+    InlineKeyboardButton('Baabul', switch_inline_query_current_chat='Baabul'),
+    InlineKeyboardButton('Salaam-e-Ishq', switch_inline_query_current_chat='Salaam-e-Ishq'),
+],
+[
+    InlineKeyboardButton('Partner', switch_inline_query_current_chat='Partner'),
+    InlineKeyboardButton('Marigold: An Adventure in India', switch_inline_query_current_chat='Marigold: An Adventure in India'),
+],
+[
+    InlineKeyboardButton('God Tussi Great Ho', switch_inline_query_current_chat='God Tussi Great Ho'),
+    InlineKeyboardButton('Heroes', switch_inline_query_current_chat='Heroes'),
+],
+[
+    InlineKeyboardButton('Yuvvraaj', switch_inline_query_current_chat='Yuvvraaj'),
+    InlineKeyboardButton('Wanted', switch_inline_query_current_chat='Wanted'),
+],
+[
+    InlineKeyboardButton('Main Aurr Mrs Khanna', switch_inline_query_current_chat='Main Aurr Mrs Khanna'),
+    InlineKeyboardButton('London Dreams', switch_inline_query_current_chat='London Dreams'),
+],
+[
+    InlineKeyboardButton('Veer', switch_inline_query_current_chat='Veer'),
+    InlineKeyboardButton('Prem Kaa Game', switch_inline_query_current_chat='Prem Kaa Game'),
+],
+[
+    InlineKeyboardButton('Dabangg', switch_inline_query_current_chat='Dabangg'),
+    InlineKeyboardButton('Ready', switch_inline_query_current_chat='Ready'),
+],
+[
+    InlineKeyboardButton('Bodyguard', switch_inline_query_current_chat='Bodyguard'),
+    InlineKeyboardButton('Ek Tha Tiger', switch_inline_query_current_chat='Ek Tha Tiger'),
+],
+[
+    InlineKeyboardButton('Dabangg 2', switch_inline_query_current_chat='Dabangg 2'),
+    InlineKeyboardButton('Jai Ho', switch_inline_query_current_chat='Jai Ho'),
+],
+[
+    InlineKeyboardButton('Kick', switch_inline_query_current_chat='Kick'),
+    InlineKeyboardButton('Bajrangi Bhaijaan', switch_inline_query_current_chat='Bajrangi Bhaijaan'),
+],
+[
+    InlineKeyboardButton('Prem Ratan Dhan Payo', switch_inline_query_current_chat='Prem Ratan Dhan Payo'),
+    InlineKeyboardButton('Sultan', switch_inline_query_current_chat='Sultan'),
+],
+[
+    InlineKeyboardButton('Tubelight', switch_inline_query_current_chat='Tubelight'),
+    InlineKeyboardButton('Tiger Zinda Hai', switch_inline_query_current_chat='Tiger Zinda Hai'),
+],
+[
+    InlineKeyboardButton('Race 3', switch_inline_query_current_chat='Race 3'),
+    InlineKeyboardButton('Bharat', switch_inline_query_current_chat='Bharat'),
+],
+[
+    InlineKeyboardButton('Dabangg 3', switch_inline_query_current_chat='Dabangg 3'),
+    InlineKeyboardButton('Radhe: Your Most Wanted Bhai', switch_inline_query_current_chat='Radhe: Your Most Wanted Bhai'),
+    InlineKeyboardButton('Antim: The Final Truth', switch_inline_query_current_chat='Antim: The Final Truth'),
+]
+,[InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
     elif query.data == "srk":
         buttons = [ [
     InlineKeyboardButton('Dilwale Dulhania Le Jayenge', switch_inline_query_current_chat='Dilwale Dulhania Le Jayenge'),

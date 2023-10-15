@@ -2057,7 +2057,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Fɪʟᴇ Sᴛᴏʀᴇ", callback_data="store_file"),
             ],
             [
-                InlineKeyboardButton("Cᴏɴɴᴇᴄᴛɪᴏɴ", callback_data="coct"),
+                InlineKeyboardButton("Hero List", callback_data="herolist"),
                 InlineKeyboardButton("Exᴛʀᴀ Mᴏᴅs", callback_data="extra"),
             ],
             [
@@ -2171,8 +2171,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
-    elif query.data == "coct":
-        buttons = [[InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+    elif query.data == "herolist":
+        buttons = [ [
+                InlineKeyboardButton("Shah Rukh Khan", callback_data="srk"),
+                InlineKeyboardButton("Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", callback_data="source")
+            ],
+            [
+                InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),
+                InlineKeyboardButton("Cʟᴏsᴇ", callback_data="close_data"),
+            ],[InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
         await client.edit_message_media(
             query.message.chat.id,
             query.message.id,
@@ -2184,6 +2191,164 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
+        #im add 
+    elif query.data == "srk":
+        buttons = [ [
+    InlineKeyboardButton('Deewana (1992)', switch_inline_query_current_chat='Deewana (1992)'),
+],
+[
+    InlineKeyboardButton('Chamatkar (1992)', switch_inline_query_current_chat='Chamatkar (1992)'),
+],
+[
+    InlineKeyboardButton('Dil Aashna Hai (1992)', switch_inline_query_current_chat='Dil Aashna Hai (1992)'),
+],
+[
+    InlineKeyboardButton('Raju Ban Gaya Gentleman (1992)', switch_inline_query_current_chat='Raju Ban Gaya Gentleman (1992)'),
+],
+[
+    InlineKeyboardButton('Dilwale Dulhania Le Jayenge (1995)', switch_inline_query_current_chat='Dilwale Dulhania Le Jayenge (1995)'),
+],
+[
+    InlineKeyboardButton('Diljale (1996)', switch_inline_query_current_chat='Diljale (1996)'),
+],
+[
+    InlineKeyboardButton('Dushman Duniya Ka (1996)', switch_inline_query_current_chat='Dushman Duniya Ka (1996)'),
+],
+[
+    InlineKeyboardButton('Gudgudee (1997)', switch_inline_query_current_chat='Gudgudee (1997)'),
+],
+[
+    InlineKeyboardButton('Koyla (1997)', switch_inline_query_current_chat='Koyla (1997)'),
+],
+[
+    InlineKeyboardButton('Yes Boss (1997)', switch_inline_query_current_chat='Yes Boss (1997)'),
+],
+[
+    InlineKeyboardButton('Pardes (1997)', switch_inline_query_current_chat='Pardes (1997)'),
+],
+[
+    InlineKeyboardButton('Achanak (1998)', switch_inline_query_current_chat='Achanak (1998)'),
+],
+[
+    InlineKeyboardButton('Kuch Kuch Hota Hai (1998)', switch_inline_query_current_chat='Kuch Kuch Hota Hai (1998)'),
+],
+[
+    InlineKeyboardButton('Achanak (1998)', switch_inline_query_current_chat='Achanak (1998)'),
+],
+[
+    InlineKeyboardButton('Baadshah (1999)', switch_inline_query_current_chat='Baadshah (1999)'),
+],
+[
+    InlineKeyboardButton('Phir Bhi Dil Hai Hindustani (2000)', switch_inline_query_current_chat='Phir Bhi Dil Hai Hindustani (2000)'),
+],
+[
+    InlineKeyboardButton('Har Dil Jo Pyar Karega (2000)', switch_inline_query_current_chat='Har Dil Jo Pyar Karega (2000)'),
+],
+[
+    InlineKeyboardButton('Gaja Gamini (2000)', switch_inline_query_current_chat='Gaja Gamini (2000)'),
+],
+[
+    InlineKeyboardButton('Josh (2000)', switch_inline_query_current_chat='Josh (2000)'),
+],
+[
+    InlineKeyboardButton('Har Dil Jo Pyar Karega (2000)', switch_inline_query_current_chat='Har Dil Jo Pyar Karega (2000)'),
+],
+[
+    InlineKeyboardButton('Gaja Gamini (2000)', switch_inline_query_current_chat='Gaja Gamini (2000)'),
+],
+[
+    InlineKeyboardButton('One 2 Ka 4 (2001)', switch_inline_query_current_chat='One 2 Ka 4 (2001)'),
+],
+[
+    InlineKeyboardButton('Aśoka (2001)', switch_inline_query_current_chat='Aśoka (2001)'),
+],
+[
+    InlineKeyboardButton('Kabhi Khushi Kabhie Gham (2001)', switch_inline_query_current_chat='Kabhi Khushi Kabhie Gham (2001)'),
+],
+[
+    InlineKeyboardButton('Hum Tumhare Hain Sanam (2002)', switch_inline_query_current_chat='Hum Tumhare Hain Sanam (2002)'),
+],
+[
+    InlineKeyboardButton('Devdas (2002)', switch_inline_query_current_chat='Devdas (2002)'),
+],
+[
+    InlineKeyboardButton('Chalte Chalte (2003)', switch_inline_query_current_chat='Chalte Chalte (2003)'),
+],
+[
+    InlineKeyboardButton('Kal Ho Naa Ho (2003)', switch_inline_query_current_chat='Kal Ho Naa Ho (2003)'),
+],
+[
+    InlineKeyboardButton('Main Hoon Na (2004)', switch_inline_query_current_chat='Main Hoon Na (2004)'),
+],
+[
+    InlineKeyboardButton('Veer-Zaara (2004)', switch_inline_query_current_chat='Veer-Zaara (2004)'),
+],
+[
+    InlineKeyboardButton('Swades (2004)', switch_inline_query_current_chat='Swades (2004)'),
+],
+[
+    InlineKeyboardButton('Paheli (2005)', switch_inline_query_current_chat='Paheli (2005)'),
+],
+[
+    InlineKeyboardButton('Don (2006)', switch_inline_query_current_chat='Don (2006)'),
+],
+[
+    InlineKeyboardButton('Chakde! India (2007)', switch_inline_query_current_chat='Chakde! India (2007)'),
+],
+[
+    InlineKeyboardButton('Om Shanti Om (2007)', switch_inline_query_current_chat='Om Shanti Om (2007)'),
+],
+[
+    InlineKeyboardButton('Rab Ne Bana Di Jodi (2008)', switch_inline_query_current_chat='Rab Ne Bana Di Jodi (2008)'),
+],
+[
+    InlineKeyboardButton('My Name Is Khan (2010)', switch_inline_query_current_chat='My Name Is Khan (2010)'),
+],
+[
+    InlineKeyboardButton('Ra.One (2011)', switch_inline_query_current_chat='Ra.One (2011)'),
+],
+[
+    InlineKeyboardButton('Don 2 (2011)', switch_inline_query_current_chat='Don 2 (2011)'),
+],
+[
+    InlineKeyboardButton('Jab Tak Hai Jaan (2012)', switch_inline_query_current_chat='Jab Tak Hai Jaan (2012)'),
+],
+[
+    InlineKeyboardButton('Chennai Express (2013)', switch_inline_query_current_chat='Chennai Express (2013)'),
+],
+[
+    InlineKeyboardButton('Happy New Year (2014)', switch_inline_query_current_chat='Happy New Year (2014)'),
+],
+[
+    InlineKeyboardButton('Dilwale (2015)', switch_inline_query_current_chat='Dilwale (2015)'),
+],
+[
+    InlineKeyboardButton('Fan (2016)', switch_inline_query_current_chat='Fan (2016)'),
+],
+[
+    InlineKeyboardButton('Dear Zindagi (2016)', switch_inline_query_current_chat='Dear Zindagi (2016)'),
+],
+[
+    InlineKeyboardButton('Raees (2017)', switch_inline_query_current_chat='Raees (2017)'),
+],
+[
+    InlineKeyboardButton('Jab Harry Met Sejal (2017)', switch_inline_query_current_chat='Jab Harry Met Sejal (2017)'),
+],
+[
+    InlineKeyboardButton('Zero (2018)', switch_inline_query_current_chat='Zero (2018)'),
+],[InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+        #im add end
     elif query.data == "extra":
         buttons = [
             [

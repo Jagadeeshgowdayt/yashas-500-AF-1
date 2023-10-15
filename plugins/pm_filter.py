@@ -2178,8 +2178,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],
             [
                 InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),
-                InlineKeyboardButton("Cʟᴏsᴇ", callback_data="close_data"),
-            ],[InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+                InlineKeyboardButton("Cʟᴏsᴇ", callback_data="close_data")
+            ],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
         await client.edit_message_media(
             query.message.chat.id,
             query.message.id,

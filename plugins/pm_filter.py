@@ -2177,7 +2177,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan")
             ], [
                 InlineKeyboardButton("Aamir Khan", callback_data="AamirKhan"),
-                InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan")
+                InlineKeyboardButton("Ranveer Singh", callback_data="RanveerSingh")
             ],[
                 InlineKeyboardButton("Akshay Kumar", callback_data="AkshayKumar"),
                 InlineKeyboardButton("Ranbir Kapoor", callback_data="RanbirKapoor")
@@ -2202,6 +2202,48 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML,
         )
         #im add 
+    elif query.data == "RanveerSingh":
+        buttons = [ [
+    InlineKeyboardButton('Band Baaja Baaraat', switch_inline_query_current_chat='Band Baaja Baaraat'),
+    InlineKeyboardButton('Ladies vs Ricky Bahl', switch_inline_query_current_chat='Ladies vs Ricky Bahl'),
+],
+[
+    InlineKeyboardButton('Lootera', switch_inline_query_current_chat='Lootera'),
+    InlineKeyboardButton('Goliyon Ki Raasleela Ram-Leela', switch_inline_query_current_chat='Goliyon Ki Raasleela Ram-Leela'),
+],
+[
+    InlineKeyboardButton('Gunday', switch_inline_query_current_chat='Gunday'),
+    InlineKeyboardButton('Dil Dhadakne Do', switch_inline_query_current_chat='Dil Dhadakne Do'),
+],
+[
+    InlineKeyboardButton('Bajirao Mastani', switch_inline_query_current_chat='Bajirao Mastani'),
+    InlineKeyboardButton('Befikre', switch_inline_query_current_chat='Befikre'),
+],
+[
+    InlineKeyboardButton('Padmaavat', switch_inline_query_current_chat='Padmaavat'),
+    InlineKeyboardButton('Simmba', switch_inline_query_current_chat='Simmba'),
+],
+[
+    InlineKeyboardButton('Gully Boy', switch_inline_query_current_chat='Gully Boy'),
+    InlineKeyboardButton('83', switch_inline_query_current_chat='83'),
+],
+[
+    InlineKeyboardButton('Jayeshbhai Jordaar', switch_inline_query_current_chat='Jayeshbhai Jordaar'),
+    InlineKeyboardButton('Cirkus', switch_inline_query_current_chat='Cirkus'),
+]
+,[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
     elif query.data == "AjayDevgn":
         buttons = [ [
     InlineKeyboardButton('Phool Aur Kaante', switch_inline_query_current_chat='Phool Aur Kaante'),

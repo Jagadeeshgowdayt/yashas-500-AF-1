@@ -2201,7 +2201,397 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
-        #im add 
+        #im add start me
+    elif query.data == "Biography":
+        buttons = [ [
+    InlineKeyboardButton('Bhaag Milkha Bhaag', switch_inline_query_current_chat='Bhaag Milkha Bhaag'),
+    InlineKeyboardButton('Dangal', switch_inline_query_current_chat='Dangal'),
+],
+[
+    InlineKeyboardButton('Mary Kom', switch_inline_query_current_chat='Mary Kom'),
+    InlineKeyboardButton('The Dirty Picture', switch_inline_query_current_chat='The Dirty Picture'),
+],
+[
+    InlineKeyboardButton('Neerja', switch_inline_query_current_chat='Neerja'),
+    InlineKeyboardButton('M.S. Dhoni: The Untold Story', switch_inline_query_current_chat='M.S. Dhoni: The Untold Story'),
+],
+[
+    InlineKeyboardButton('Sarbjit', switch_inline_query_current_chat='Sarbjit'),
+    InlineKeyboardButton('Paan Singh Tomar', switch_inline_query_current_chat='Paan Singh Tomar'),
+],
+[
+    InlineKeyboardButton('Guru', switch_inline_query_current_chat='Guru'),
+    InlineKeyboardButton('Gandhi, My Father', switch_inline_query_current_chat='Gandhi, My Father'),
+],
+[
+    InlineKeyboardButton('Manjhi: The Mountain Man', switch_inline_query_current_chat='Manjhi: The Mountain Man'),
+    InlineKeyboardButton('The Legend of Bhagat Singh', switch_inline_query_current_chat='The Legend of Bhagat Singh'),
+],
+[
+    InlineKeyboardButton('Hawaizaada', switch_inline_query_current_chat='Hawaizaada'),
+    InlineKeyboardButton('Sardar', switch_inline_query_current_chat='Sardar'),
+],
+[
+    InlineKeyboardButton('Jodhaa Akbar', switch_inline_query_current_chat='Jodhaa Akbar'),
+    InlineKeyboardButton('Sardar Udham', switch_inline_query_current_chat='Sardar Udham'),
+],
+[
+    InlineKeyboardButton('Shakeela', switch_inline_query_current_chat='Shakeela'),
+    InlineKeyboardButton('Prithviraj (Upcoming)', switch_inline_query_current_chat='Prithviraj (Upcoming)'),
+],
+[
+    InlineKeyboardButton('Shershaah', switch_inline_query_current_chat='Shershaah'),
+    InlineKeyboardButton('Shabaash Mithu', switch_inline_query_current_chat='Shabaash Mithu'),
+],
+[
+    InlineKeyboardButton('Rani Lakshmi Bai', switch_inline_query_current_chat='Rani Lakshmi Bai'),
+    InlineKeyboardButton('Harivu', switch_inline_query_current_chat='Harivu'),
+],
+[
+    InlineKeyboardButton('Dasharatham', switch_inline_query_current_chat='Dasharatham'),
+    InlineKeyboardButton('Bhagvad Gita', switch_inline_query_current_chat='Bhagvad Gita'),
+],
+[
+    InlineKeyboardButton('Jugaad', switch_inline_query_current_chat='Jugaad'),
+    InlineKeyboardButton('Ramanujan', switch_inline_query_current_chat='Ramanujan'),
+],
+[
+    InlineKeyboardButton('Bawandar', switch_inline_query_current_chat='Bawandar'),
+    InlineKeyboardButton('Sachin: A Billion Dreams', switch_inline_query_current_chat='Sachin: A Billion Dreams'),
+],
+[
+    InlineKeyboardButton('Shivaay (Biopic of Neerja Bhanot)', switch_inline_query_current_chat='Shivaay (Biopic of Neerja Bhanot)'),
+    InlineKeyboardButton('Bala', switch_inline_query_current_chat='Bala'),
+],
+[
+    InlineKeyboardButton('Mohenjo Daro (Biopic of Sarman)', switch_inline_query_current_chat='Mohenjo Daro (Biopic of Sarman)'),
+    InlineKeyboardButton('Phamous (Biopic of Radhe Shyam)', switch_inline_query_current_chat='Phamous (Biopic of Radhe Shyam)'),
+],
+[
+    InlineKeyboardButton('Pad Man', switch_inline_query_current_chat='Pad Man'),
+    InlineKeyboardButton('Har Ghar Kuch Kehta Hai', switch_inline_query_current_chat='Har Ghar Kuch Kehta Hai'),
+],
+[
+    InlineKeyboardButton('Gattu', switch_inline_query_current_chat='Gattu'),
+    InlineKeyboardButton('Bose: Dead/Alive (Web Series)', switch_inline_query_current_chat='Bose: Dead/Alive (Web Series)'),
+],
+[
+    InlineKeyboardButton('Modi: Journey of a Common Man (Web Series)', switch_inline_query_current_chat='Modi: Journey of a Common Man (Web Series)'),
+    InlineKeyboardButton('Inside Edge (Web Series)', switch_inline_query_current_chat='Inside Edge (Web Series)'),
+],
+[
+    InlineKeyboardButton('The Forgotten Army (Web Series)', switch_inline_query_current_chat='The Forgotten Army (Web Series)'),
+    InlineKeyboardButton('Chhapaak', switch_inline_query_current_chat='Chhapaak'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Mystery":
+        buttons = [ [
+    InlineKeyboardButton('Kahaani', switch_inline_query_current_chat='Kahaani'),
+    InlineKeyboardButton('Talvar', switch_inline_query_current_chat='Talvar'),
+],
+[
+    InlineKeyboardButton('Drishyam', switch_inline_query_current_chat='Drishyam'),
+    InlineKeyboardButton('Talaash: The Answer Lies Within', switch_inline_query_current_chat='Talaash: The Answer Lies Within'),
+],
+[
+    InlineKeyboardButton('Gupt: The Hidden Truth', switch_inline_query_current_chat='Gupt: The Hidden Truth'),
+    InlineKeyboardButton('Karthik Calling Karthik', switch_inline_query_current_chat='Karthik Calling Karthik'),
+],
+[
+    InlineKeyboardButton('Bhool Bhulaiyaa', switch_inline_query_current_chat='Bhool Bhulaiyaa'),
+    InlineKeyboardButton('Murder', switch_inline_query_current_chat='Murder'),
+],
+[
+    InlineKeyboardButton('Johnny Gaddaar', switch_inline_query_current_chat='Johnny Gaddaar'),
+    InlineKeyboardButton('Samay: When Time Strikes', switch_inline_query_current_chat='Samay: When Time Strikes'),
+],
+[
+    InlineKeyboardButton('The Stoneman Murders', switch_inline_query_current_chat='The Stoneman Murders'),
+    InlineKeyboardButton('Kaun', switch_inline_query_current_chat='Kaun'),
+],
+[
+    InlineKeyboardButton('Guzaarish', switch_inline_query_current_chat='Guzaarish'),
+    InlineKeyboardButton('Rahasya', switch_inline_query_current_chat='Rahasya'),
+],
+[
+    InlineKeyboardButton('Manorama Six Feet Under', switch_inline_query_current_chat='Manorama Six Feet Under'),
+    InlineKeyboardButton('100 Days', switch_inline_query_current_chat='100 Days'),
+],
+[
+    InlineKeyboardButton('Te3n', switch_inline_query_current_chat='Te3n'),
+    InlineKeyboardButton('Kaabil', switch_inline_query_current_chat='Kaabil'),
+],
+[
+    InlineKeyboardButton('Aks', switch_inline_query_current_chat='Aks'),
+    InlineKeyboardButton('Ugly', switch_inline_query_current_chat='Ugly'),
+],
+[
+    InlineKeyboardButton('Ek Hasina Thi', switch_inline_query_current_chat='Ek Hasina Thi'),
+    InlineKeyboardButton('Geraftaar', switch_inline_query_current_chat='Geraftaar'),
+],
+[
+    InlineKeyboardButton('No Smoking', switch_inline_query_current_chat='No Smoking'),
+    InlineKeyboardButton('X: Past Is Present', switch_inline_query_current_chat='X: Past Is Present'),
+],
+[
+    InlineKeyboardButton('Tum Mere Ho', switch_inline_query_current_chat='Tum Mere Ho'),
+    InlineKeyboardButton('Teen', switch_inline_query_current_chat='Teen'),
+],
+[
+    InlineKeyboardButton('8 x 10 Tasveer', switch_inline_query_current_chat='8 x 10 Tasveer'),
+    InlineKeyboardButton('404: Error Not Found', switch_inline_query_current_chat='404: Error Not Found'),
+],
+[
+    InlineKeyboardButton('13B: Fear Has a New Address', switch_inline_query_current_chat='13B: Fear Has a New Address'),
+    InlineKeyboardButton('Jannat', switch_inline_query_current_chat='Jannat'),
+],
+[
+    InlineKeyboardButton('Ittefaq (1969)', switch_inline_query_current_chat='Ittefaq (1969)'),
+    InlineKeyboardButton('Ittefaq (2017)', switch_inline_query_current_chat='Ittefaq (2017)'),
+],
+[
+    InlineKeyboardButton('Jigsaw (Dubbed in Hindi)', switch_inline_query_current_chat='Jigsaw (Dubbed in Hindi)'),
+    InlineKeyboardButton('Raaz: The Mystery Continues', switch_inline_query_current_chat='Raaz: The Mystery Continues'),
+],
+[
+    InlineKeyboardButton('Koi Mil Gaya', switch_inline_query_current_chat='Koi Mil Gaya'),
+    InlineKeyboardButton('Krrish', switch_inline_query_current_chat='Krrish'),
+],
+[
+    InlineKeyboardButton('Krrish 3', switch_inline_query_current_chat='Krrish 3'),
+    InlineKeyboardButton('Hawa', switch_inline_query_current_chat='Hawa'),
+],
+[
+    InlineKeyboardButton('Rahasya', switch_inline_query_current_chat='Rahasya'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Horror":
+        buttons = [ [
+    InlineKeyboardButton('Raaz', switch_inline_query_current_chat='Raaz'),
+    InlineKeyboardButton('Bhoot', switch_inline_query_current_chat='Bhoot'),
+],
+[
+    InlineKeyboardButton('Darna Mana Hai', switch_inline_query_current_chat='Darna Mana Hai'),
+    InlineKeyboardButton('Bhool Bhulaiyaa', switch_inline_query_current_chat='Bhool Bhulaiyaa'),
+],
+[
+    InlineKeyboardButton('1920', switch_inline_query_current_chat='1920'),
+    InlineKeyboardButton('Raaz: The Mystery Continues', switch_inline_query_current_chat='Raaz: The Mystery Continues'),
+],
+[
+    InlineKeyboardButton('Haunted - 3D', switch_inline_query_current_chat='Haunted - 3D'),
+    InlineKeyboardButton('Ragini MMS', switch_inline_query_current_chat='Ragini MMS'),
+],
+[
+    InlineKeyboardButton('Pari', switch_inline_query_current_chat='Pari'),
+    InlineKeyboardButton('Stree', switch_inline_query_current_chat='Stree'),
+],
+[
+    InlineKeyboardButton('Tumbbad', switch_inline_query_current_chat='Tumbbad'),
+    InlineKeyboardButton('Pari', switch_inline_query_current_chat='Pari'),
+],
+[
+    InlineKeyboardButton('Darna Zaroori Hai', switch_inline_query_current_chat='Darna Zaroori Hai'),
+    InlineKeyboardButton('Raat', switch_inline_query_current_chat='Raat'),
+],
+[
+    InlineKeyboardButton('Pizza', switch_inline_query_current_chat='Pizza'),
+    InlineKeyboardButton('Ek Thi Daayan', switch_inline_query_current_chat='Ek Thi Daayan'),
+],
+[
+    InlineKeyboardButton('Ragini MMS 2', switch_inline_query_current_chat='Ragini MMS 2'),
+    InlineKeyboardButton('Go Goa Gone', switch_inline_query_current_chat='Go Goa Gone'),
+],
+[
+    InlineKeyboardButton('13B: Fear Has a New Address', switch_inline_query_current_chat='13B: Fear Has a New Address'),
+    InlineKeyboardButton('Horror Story', switch_inline_query_current_chat='Horror Story'),
+],
+[
+    InlineKeyboardButton('Phoonk', switch_inline_query_current_chat='Phoonk'),
+    InlineKeyboardButton('Alone', switch_inline_query_current_chat='Alone'),
+],
+[
+    InlineKeyboardButton('1920: Evil Returns', switch_inline_query_current_chat='1920: Evil Returns'),
+    InlineKeyboardButton('Dobaara: See Your Evil', switch_inline_query_current_chat='Dobaara: See Your Evil'),
+],
+[
+    InlineKeyboardButton('Lupt', switch_inline_query_current_chat='Lupt'),
+    InlineKeyboardButton('The House Next Door', switch_inline_query_current_chat='The House Next Door'),
+],
+[
+    InlineKeyboardButton('Amavas', switch_inline_query_current_chat='Amavas'),
+    InlineKeyboardButton('Tumbbad', switch_inline_query_current_chat='Tumbbad'),
+],
+[
+    InlineKeyboardButton('Kaal', switch_inline_query_current_chat='Kaal'),
+    InlineKeyboardButton('Bhoot: Part One - The Haunted Ship', switch_inline_query_current_chat='Bhoot: Part One - The Haunted Ship'),
+],
+[
+    InlineKeyboardButton('Roohi', switch_inline_query_current_chat='Roohi'),
+    InlineKeyboardButton('Pari', switch_inline_query_current_chat='Pari'),
+],
+[
+    InlineKeyboardButton('Darna Zaroori Hai', switch_inline_query_current_chat='Darna Zaroori Hai'),
+    InlineKeyboardButton('The Conjuring 2 (Dubbed in Hindi)', switch_inline_query_current_chat='The Conjuring 2 (Dubbed in Hindi)'),
+],
+[
+    InlineKeyboardButton('The Nun (Dubbed in Hindi)', switch_inline_query_current_chat='The Nun (Dubbed in Hindi)'),
+    InlineKeyboardButton('Annabelle: Creation (Dubbed in Hindi)', switch_inline_query_current_chat='Annabelle: Creation (Dubbed in Hindi)'),
+],
+[
+    InlineKeyboardButton('Pari', switch_inline_query_current_chat='Pari'),
+    InlineKeyboardButton('Bhool Bhulaiyaa 2', switch_inline_query_current_chat='Bhool Bhulaiyaa 2'),
+],
+[
+    InlineKeyboardButton('Bhoot Police', switch_inline_query_current_chat='Bhoot Police'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
+    elif query.data == "Drama":
+        buttons = [ [
+    InlineKeyboardButton('Dilwale Dulhania Le Jayenge', switch_inline_query_current_chat='Dilwale Dulhania Le Jayenge'),
+    InlineKeyboardButton('Kabhi Khushi Kabhie Gham', switch_inline_query_current_chat='Kabhi Khushi Kabhie Gham'),
+],
+[
+    InlineKeyboardButton('Dil Chahta Hai', switch_inline_query_current_chat='Dil Chahta Hai'),
+    InlineKeyboardButton('Taare Zameen Par', switch_inline_query_current_chat='Taare Zameen Par'),
+],
+[
+    InlineKeyboardButton('Rang De Basanti', switch_inline_query_current_chat='Rang De Basanti'),
+    InlineKeyboardButton('Lagaan', switch_inline_query_current_chat='Lagaan'),
+],
+[
+    InlineKeyboardButton('Dil Se..', switch_inline_query_current_chat='Dil Se..'),
+    InlineKeyboardButton('Swades', switch_inline_query_current_chat='Swades'),
+],
+[
+    InlineKeyboardButton('Devdas', switch_inline_query_current_chat='Devdas'),
+    InlineKeyboardButton('Bajrangi Bhaijaan', switch_inline_query_current_chat='Bajrangi Bhaijaan'),
+],
+[
+    InlineKeyboardButton('My Name Is Khan', switch_inline_query_current_chat='My Name Is Khan'),
+    InlineKeyboardButton('Rockstar', switch_inline_query_current_chat='Rockstar'),
+],
+[
+    InlineKeyboardButton('A Wednesday', switch_inline_query_current_chat='A Wednesday'),
+    InlineKeyboardButton('Barfi!', switch_inline_query_current_chat='Barfi!'),
+],
+[
+    InlineKeyboardButton('Haider', switch_inline_query_current_chat='Haider'),
+    InlineKeyboardButton('Pink', switch_inline_query_current_chat='Pink'),
+],
+[
+    InlineKeyboardButton('Piku', switch_inline_query_current_chat='Piku'),
+    InlineKeyboardButton('Udta Punjab', switch_inline_query_current_chat='Udta Punjab'),
+],
+[
+    InlineKeyboardButton('Kapoor & Sons', switch_inline_query_current_chat='Kapoor & Sons'),
+    InlineKeyboardButton('Neerja', switch_inline_query_current_chat='Neerja'),
+],
+[
+    InlineKeyboardButton('Mulk', switch_inline_query_current_chat='Mulk'),
+    InlineKeyboardButton('Gully Boy', switch_inline_query_current_chat='Gully Boy'),
+],
+[
+    InlineKeyboardButton('Article 15', switch_inline_query_current_chat='Article 15'),
+    InlineKeyboardButton('Thappad', switch_inline_query_current_chat='Thappad'),
+],
+[
+    InlineKeyboardButton('Raazi', switch_inline_query_current_chat='Raazi'),
+    InlineKeyboardButton('The Lunchbox', switch_inline_query_current_chat='The Lunchbox'),
+],
+[
+    InlineKeyboardButton('Dangal', switch_inline_query_current_chat='Dangal'),
+    InlineKeyboardButton('Chhichhore', switch_inline_query_current_chat='Chhichhore'),
+],
+[
+    InlineKeyboardButton('Super 30', switch_inline_query_current_chat='Super 30'),
+    InlineKeyboardButton('Drishyam', switch_inline_query_current_chat='Drishyam'),
+],
+[
+    InlineKeyboardButton('Kabir Singh', switch_inline_query_current_chat='Kabir Singh'),
+    InlineKeyboardButton('Queen', switch_inline_query_current_chat='Queen'),
+],
+[
+    InlineKeyboardButton('Dear Zindagi', switch_inline_query_current_chat='Dear Zindagi'),
+    InlineKeyboardButton('Newton', switch_inline_query_current_chat='Newton'),
+],
+[
+    InlineKeyboardButton('Masaan', switch_inline_query_current_chat='Masaan'),
+    InlineKeyboardButton('Black', switch_inline_query_current_chat='Black'),
+],
+[
+    InlineKeyboardButton('Iqbal', switch_inline_query_current_chat='Iqbal'),
+    InlineKeyboardButton('Sarbjit', switch_inline_query_current_chat='Sarbjit'),
+],
+[
+    InlineKeyboardButton('Tumhari Sulu', switch_inline_query_current_chat='Tumhari Sulu'),
+    InlineKeyboardButton('Shubh Mangal Saavdhan', switch_inline_query_current_chat='Shubh Mangal Saavdhan'),
+],
+[
+    InlineKeyboardButton('Andhadhun', switch_inline_query_current_chat='Andhadhun'),
+    InlineKeyboardButton('Kaabil', switch_inline_query_current_chat='Kaabil'),
+],
+[
+    InlineKeyboardButton('Fanaa', switch_inline_query_current_chat='Fanaa'),
+    InlineKeyboardButton('Wake Up Sid', switch_inline_query_current_chat='Wake Up Sid'),
+],
+[
+    InlineKeyboardButton('Tum Mile', switch_inline_query_current_chat='Tum Mile'),
+    InlineKeyboardButton('No One Killed Jessica', switch_inline_query_current_chat='No One Killed Jessica'),
+],
+[
+    InlineKeyboardButton('Hichki', switch_inline_query_current_chat='Hichki'),
+    InlineKeyboardButton('Shahid', switch_inline_query_current_chat='Shahid'),
+],
+[
+    InlineKeyboardButton('Omkara', switch_inline_query_current_chat='Omkara'),
+    InlineKeyboardButton('Goliyon Ki Raasleela Ram-Leela', switch_inline_query_current_chat='Goliyon Ki Raasleela Ram-Leela'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
     elif query.data == "Comedy":
         buttons = [ [
     InlineKeyboardButton('Andaz Apna Apna', switch_inline_query_current_chat='Andaz Apna Apna'),
@@ -2432,10 +2822,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "type0":
         buttons = [  [
-                InlineKeyboardButton("Action movies", callback_data="Action")
-            ],[ InlineKeyboardButton("Comedy movies", callback_data="Comedy")
-              ],[ InlineKeyboardButton("Action movies", callback_data="Action")
-                  ],[ InlineKeyboardButton("Action movies", callback_data="Action")
+                InlineKeyboardButton("Action", callback_data="Action")
+            ],[ InlineKeyboardButton("Comedy ", callback_data="Comedy")
+              ],[ InlineKeyboardButton("Drama", callback_data="Drama")
+                  ],[ InlineKeyboardButton("Horror", callback_data="Horror")
+                    ],[ InlineKeyboardButton("Mystery", callback_data="Mystery")
+                    ],[ InlineKeyboardButton("Biography", callback_data="Biography")
                     ],[
                 InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
         await client.edit_message_media(

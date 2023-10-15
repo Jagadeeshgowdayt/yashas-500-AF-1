@@ -2749,7 +2749,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 ],
 [
     InlineKeyboardButton('Anna Bond', switch_inline_query_current_chat='Anna Bond'),
-    InlineKeyboardButton('Power', switch_inline_keyboard_query_current_chat='Power'),
+    InlineKeyboardButton('Power', switch_inline_query_current_chat='Power'),
 ],
 [
     InlineKeyboardButton('Ninnindale', switch_inline_query_current_chat='Ninnindale'),

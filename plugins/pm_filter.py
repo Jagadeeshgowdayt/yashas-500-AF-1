@@ -2056,7 +2056,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("best hindi movies", callback_data="best0")
             ],
             [
-                InlineKeyboardButton("Hero List", callback_data="herolist"
+                InlineKeyboardButton("Hero List", callback_data="herolist")
             ],[
                 InlineKeyboardButton(" categories / type", callback_data="type0")
             ],

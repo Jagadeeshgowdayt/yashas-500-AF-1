@@ -2175,6 +2175,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [ [
                 InlineKeyboardButton("Shah Rukh Khan", callback_data="srk"),
                 InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan")
+            ], [
+                InlineKeyboardButton("Aamir Khan", callback_data="AamirKhan"),
+                InlineKeyboardButton("Salman Khan", callback_data="SalmanKhan")
             ],
             [
                 InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start"),
@@ -2193,6 +2196,77 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML,
         )
         #im add 
+    elif query.data == "AamirKhan":
+        buttons = [ 
+        [
+    InlineKeyboardButton('Qayamat Se Qayamat Tak', switch_inline_query_current_chat='Qayamat Se Qayamat Tak'),
+    InlineKeyboardButton('Raakh', switch_inline_query_current_chat='Raakh'),
+],
+[
+    InlineKeyboardButton('Dil', switch_inline_query_current_chat='Dil'),
+    InlineKeyboardButton('Dil Hai Ki Manta Nahin', switch_inline_query_current_chat='Dil Hai Ki Manta Nahin'),
+],
+[
+    InlineKeyboardButton('Jo Jeeta Wohi Sikandar', switch_inline_query_current_chat='Jo Jeeta Wohi Sikandar'),
+    InlineKeyboardButton('Hum Hain Rahi Pyar Ke', switch_inline_query_current_chat='Hum Hain Rahi Pyar Ke'),
+],
+[
+    InlineKeyboardButton('Andaz Apna Apna', switch_inline_query_current_chat='Andaz Apna Apna'),
+    InlineKeyboardButton('Akele Hum Akele Tum', switch_inline_query_current_chat='Akele Hum Akele Tum'),
+],
+[
+    InlineKeyboardButton('Raja Hindustani', switch_inline_query_current_chat='Raja Hindustani'),
+    InlineKeyboardButton('Ishq', switch_inline_query_current_chat='Ishq'),
+],
+[
+    InlineKeyboardButton('Ghulam', switch_inline_query_current_chat='Ghulam'),
+    InlineKeyboardButton('Sarfarosh', switch_inline_query_current_chat='Sarfarosh'),
+],
+[
+    InlineKeyboardButton('Mela', switch_inline_query_current_chat='Mela'),
+    InlineKeyboardButton('Lagaan', switch_inline_query_current_chat='Lagaan'),
+],
+[
+    InlineKeyboardButton('Dil Chahta Hai', switch_inline_query_current_chat='Dil Chahta Hai'),
+    InlineKeyboardButton('Mangal Pandey: The Rising', switch_inline_query_current_chat='Mangal Pandey: The Rising'),
+],
+[
+    InlineKeyboardButton('Rang De Basanti', switch_inline_query_current_chat='Rang De Basanti'),
+    InlineKeyboardButton('Fanaa', switch_inline_query_current_chat='Fanaa'),
+],
+[
+    InlineKeyboardButton('Taare Zameen Par', switch_inline_query_current_chat='Taare Zameen Par'),
+    InlineKeyboardButton('Ghajini', switch_inline_query_current_chat='Ghajini'),
+],
+[
+    InlineKeyboardButton('3 Idiots', switch_inline_query_current_chat='3 Idiots'),
+    InlineKeyboardButton('Dhobi Ghat', switch_inline_query_current_chat='Dhobi Ghat'),
+],
+[
+    InlineKeyboardButton('Talaash', switch_inline_query_current_chat='Talaash'),
+    InlineKeyboardButton('Dhoom 3', switch_inline_query_current_chat='Dhoom 3'),
+],
+[
+    InlineKeyboardButton('PK', switch_inline_query_current_chat='PK'),
+    InlineKeyboardButton('Dangal', switch_inline_query_current_chat='Dangal'),
+],
+[
+    InlineKeyboardButton('Thugs of Hindostan', switch_inline_query_current_chat='Thugs of Hindostan'),
+    InlineKeyboardButton('Laal Singh Chaddha', switch_inline_query_current_chat='Laal Singh Chaddha'),
+]
+,[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
     elif query.data == "SalmanKhan":
         buttons = [ [
     InlineKeyboardButton('Biwi Ho To Aisi', switch_inline_query_current_chat='Biwi Ho To Aisi'),
@@ -2324,8 +2398,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 ],
 [
     InlineKeyboardButton('Dabangg 3', switch_inline_query_current_chat='Dabangg 3'),
-    InlineKeyboardButton('Radhe: Your Most Wanted Bhai', switch_inline_query_current_chat='Radhe: Your Most Wanted Bhai'),
-    InlineKeyboardButton('Antim: The Final Truth', switch_inline_query_current_chat='Antim: The Final Truth'),
+    InlineKeyboardButton('Radhe: Your Most Wanted Bhai', switch_inline_query_current_chat='Radhe: Your Most Wanted Bhai')
 ]
 ,[InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")]]
         await client.edit_message_media(

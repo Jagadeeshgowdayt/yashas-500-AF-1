@@ -2200,7 +2200,220 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
-        #im add start me
+        #im add startme
+    elif query.data == "bestk":
+        buttons = [ [
+    InlineKeyboardButton('Samskara', switch_inline_query_current_chat='Samskara'),
+    InlineKeyboardButton('Ranganayaki', switch_inline_query_current_chat='Ranganayaki'),
+],
+[
+    InlineKeyboardButton('Bhootayyana Maga Ayyu', switch_inline_query_current_chat='Bhootayyana Maga Ayyu'),
+    InlineKeyboardButton('Ghatashraddha', switch_inline_query_current_chat='Ghatashraddha'),
+],
+[
+    InlineKeyboardButton('Mane', switch_inline_query_current_chat='Mane'),
+    InlineKeyboardButton('Kaadu', switch_inline_query_current_chat='Kaadu'),
+],
+[
+    InlineKeyboardButton('Dweepa', switch_inline_query_current_chat='Dweepa'),
+    InlineKeyboardButton('Thaayi Saheba', switch_inline_query_current_chat='Thaayi Saheba'),
+],
+[
+    InlineKeyboardButton('Hoovu Hannu', switch_inline_query_current_chat='Hoovu Hannu'),
+    InlineKeyboardButton('Vamsha Vriksha', switch_inline_query_current_chat='Vamsha Vriksha'),
+],
+[
+    InlineKeyboardButton('Suryakanthi', switch_inline_query_current_chat='Suryakanthi'),
+    InlineKeyboardButton('Sose Tanda Soubhagya', switch_inline_query_current_chat='Sose Tanda Soubhagya'),
+],
+[
+    InlineKeyboardButton('Gejje Pooje', switch_inline_query_current_chat='Gejje Pooje'),
+    InlineKeyboardButton('Anuroopa', switch_inline_query_current_chat='Anuroopa'),
+],
+[
+    InlineKeyboardButton('Huliya', switch_inline_query_current_chat='Huliya'),
+    InlineKeyboardButton('Nagarahaavu', switch_inline_query_current_chat='Nagarahaavu'),
+],
+[
+    InlineKeyboardButton('Yeradu Nakshatragalu', switch_inline_query_current_chat='Yeradu Nakshatragalu'),
+    InlineKeyboardButton('Minchina Ota', switch_inline_query_current_chat='Minchina Ota'),
+],
+[
+    InlineKeyboardButton('Eradu Nakshatragalu', switch_inline_query_current_chat='Eradu Nakshatragalu'),
+    InlineKeyboardButton('Upasane', switch_inline_query_current_chat='Upasane'),
+],
+[
+    InlineKeyboardButton('Chomana Dudi', switch_inline_query_current_chat='Chomana Dudi'),
+    InlineKeyboardButton('Geetha', switch_inline_query_current_chat='Geetha'),
+],
+[
+    InlineKeyboardButton('Accident', switch_inline_query_current_chat='Accident'),
+    InlineKeyboardButton('Devara Duddu', switch_inline_query_current_chat='Devara Duddu'),
+],
+[
+    InlineKeyboardButton('Hombisilu', switch_inline_query_current_chat='Hombisilu'),
+    InlineKeyboardButton('Dharma', switch_inline_query_current_chat='Dharma'),
+],
+[
+    InlineKeyboardButton('Beluvalada Madilalli', switch_inline_query_current_chat='Beluvalada Madilalli'),
+    InlineKeyboardButton('Bayalu Daari', switch_inline_query_current_chat='Bayalu Daari'),
+],
+[
+    InlineKeyboardButton('Benkiya Bale', switch_inline_query_current_chat='Benkiya Bale'),
+    InlineKeyboardButton('Bara', switch_inline_query_current_chat='Bara'),
+],
+[
+    InlineKeyboardButton('Bettada Hoovu', switch_inline_query_current_chat='Bettada Hoovu'),
+    InlineKeyboardButton('Bandhana', switch_inline_query_current_chat='Bandhana'),
+],
+[
+    InlineKeyboardButton('Bangarada Manushya', switch_inline_query_current_chat='Bangarada Manushya'),
+    InlineKeyboardButton('Dampati', switch_inline_query_current_chat='Dampati'),
+],
+[
+    InlineKeyboardButton('Shubhamangala', switch_inline_query_current_chat='Shubhamangala'),
+    InlineKeyboardButton('Kasturi Nivasa', switch_inline_query_current_chat='Kasturi Nivasa'),
+],
+[
+    InlineKeyboardButton('Avala Hejje', switch_inline_query_current_chat='Avala Hejje'),
+    InlineKeyboardButton('Devara Kannu', switch_inline_query_current_chat='Devara Kannu'),
+],
+[
+    InlineKeyboardButton('Bhakta Prahlada', switch_inline_query_current_chat='Bhakta Prahlada'),
+    InlineKeyboardButton('Bhagyada Bagilu', switch_inline_query_current_chat='Bhagyada Bagilu'),
+],
+[
+    InlineKeyboardButton('Babruvahana', switch_inline_query_current_chat='Babruvahana'),
+    InlineKeyboardButton('Bhale Huchcha', switch_inline_query_current_chat='Bhale Huchcha'),
+],
+[
+    InlineKeyboardButton('Kutturu Hennu', switch_inline_query_current_chat='Kutturu Hennu'),
+    InlineKeyboardButton('Kittu Puttu', switch_inline_query_current_chat='Kittu Puttu'),
+],
+[
+    InlineKeyboardButton('Bhale Adrushtavo Adrushta', switch_inline_query_current_chat='Bhale Adrushtavo Adrushta'),
+    InlineKeyboardButton('Upendra', switch_inline_query_current_chat='Upendra'),
+],
+[
+    InlineKeyboardButton('H20', switch_inline_query_current_chat='H20'),
+    InlineKeyboardButton('Duniya', switch_inline_query_current_chat='Duniya'),
+],
+[
+    InlineKeyboardButton('Milana', switch_inline_query_current_chat='Milana'),
+    InlineKeyboardButton('Mussanje Maathu', switch_inline_query_current_chat='Mussanje Maathu'),
+],
+[
+    InlineKeyboardButton('Birugali', switch_inline_query_current_chat='Birugali'),
+    InlineKeyboardButton('Sanju Weds Geetha', switch_inline_query_current_chat='Sanju Weds Geetha'),
+],
+[
+    InlineKeyboardButton('Jolly Days', switch_inline_query_current_chat='Jolly Days'),
+    InlineKeyboardButton('Moggina Manasu', switch_inline_query_current_chat='Moggina Manasu'),
+],
+[
+    InlineKeyboardButton('Uyyale', switch_inline_query_current_chat='Uyyale'),
+    InlineKeyboardButton('Buddhivantha', switch_inline_query_current_chat='Buddhivantha'),
+],
+[
+    InlineKeyboardButton('Gunavantha', switch_inline_query_current_chat='Gunavantha'),
+    InlineKeyboardButton('Mylari', switch_inline_query_current_chat='Mylari'),
+],
+[
+    InlineKeyboardButton('Anatharu', switch_inline_query_current_chat='Anatharu'),
+    InlineKeyboardButton('Aa Dinagalu', switch_inline_query_current_chat='Aa Dinagalu'),
+],
+[
+    InlineKeyboardButton('Shyloo', switch_inline_query_current_chat='Shyloo'),
+    InlineKeyboardButton('Sanju', switch_inline_query_current_chat='Sanju'),
+],
+[
+    InlineKeyboardButton('Bannada Gejje', switch_inline_query_current_chat='Bannada Gejje'),
+    InlineKeyboardButton('Baa Nalle Madhuchandrake', switch_inline_query_current_chat='Baa Nalle Madhuchandrake'),
+],
+[
+    InlineKeyboardButton('Aa Eradu Varshagalu', switch_inline_query_current_chat='Aa Eradu Varshagalu'),
+    InlineKeyboardButton('Huli', switch_inline_query_current_chat='Huli'),
+],
+[
+    InlineKeyboardButton('Kotigobba', switch_inline_query_current_chat='Kotigobba'),
+    InlineKeyboardButton('Kiccha Huccha', switch_inline_query_current_chat='Kiccha Huccha'),
+],
+[
+    InlineKeyboardButton('Veera Parampare', switch_inline_query_current_chat='Veera Parampare'),
+    InlineKeyboardButton('Jackie', switch_inline_query_current_chat='Jackie'),
+],
+[
+    InlineKeyboardButton('Kempegowda', switch_inline_query_current_chat='Kempegowda'),
+    InlineKeyboardButton('Vishnuvardhana', switch_inline_query_current_chat='Vishnuvardhana'),
+],
+[
+    InlineKeyboardButton('Anna Bond', switch_inline_query_current_chat='Anna Bond'),
+    InlineKeyboardButton('Bhajarangi', switch_inline_query_current_chat='Bhajarangi'),
+],
+[
+    InlineKeyboardButton('Bulbul', switch_inline_query_current_chat='Bulbul'),
+    InlineKeyboardButton('Mythri', switch_inline_query_current_chat='Mythri'),
+],
+[
+    InlineKeyboardButton('Vajrakaya', switch_inline_query_current_chat='Vajrakaya'),
+    InlineKeyboardButton('Doddmane Hudga', switch_inline_query_current_chat='Doddmane Hudga'),
+],
+[
+    InlineKeyboardButton('Rajakumara', switch_inline_query_current_chat='Rajakumara'),
+    InlineKeyboardButton('Hebbuli', switch_inline_query_current_chat='Hebbuli'),
+],
+[
+    InlineKeyboardButton('The Villain', switch_inline_query_current_chat='The Villain'),
+    InlineKeyboardButton('KGF: Chapter 1', switch_inline_query_current_chat='KGF: Chapter 1'),
+],
+[
+    InlineKeyboardButton('Yajamana', switch_inline_query_current_chat='Yajamana'),
+    InlineKeyboardButton('Pailwaan', switch_inline_query_current_chat='Pailwaan'),
+],
+[
+    InlineKeyboardButton('Kurukshetra', switch_inline_query_current_chat='Kurukshetra'),
+    InlineKeyboardButton('Bharaate', switch_inline_query_current_chat='Bharaate'),
+],
+[
+    InlineKeyboardButton('Love Mocktail', switch_inline_query_current_chat='Love Mocktail'),
+    InlineKeyboardButton('Dia', switch_inline_query_current_chat='Dia'),
+],
+[
+    InlineKeyboardButton('Shivaji Surathkal', switch_inline_query_current_chat='Shivaji Surathkal'),
+    InlineKeyboardButton('Law', switch_inline_query_current_chat='Law'),
+],
+[
+    InlineKeyboardButton('Bheemasena Nalamaharaja', switch_inline_query_current_chat='Bheemasena Nalamaharaja'),
+    InlineKeyboardButton('French Biriyani', switch_inline_query_current_chat='French Biriyani'),
+],
+[
+    InlineKeyboardButton('Roberrt', switch_inline_query_current_chat='Roberrt'),
+    InlineKeyboardButton('Pogaru', switch_inline_query_current_chat='Pogaru'),
+],
+[
+    InlineKeyboardButton('Bhajarangi 2', switch_inline_query_current_chat='Bhajarangi 2'),
+    InlineKeyboardButton('Yuvarathnaa', switch_inline_query_current_chat='Yuvarathnaa'),
+],
+[
+    InlineKeyboardButton('James', switch_inline_query_current_chat='James'),
+    InlineKeyboardButton('Phantom', switch_inline_query_current_chat='Phantom'),
+],
+[
+    InlineKeyboardButton('Kotigobba 3', switch_inline_query_current_chat='Kotigobba 3'),
+    InlineKeyboardButton('Hari Hara Veera Mallu', switch_inline_query_current_chat='Hari Hara Veera Mallu'),
+],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="kannada")]]
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS)),
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+        )
     elif query.data == "Biography":
         buttons = [ [
     InlineKeyboardButton('Bhaag Milkha Bhaag', switch_inline_query_current_chat='Bhaag Milkha Bhaag'),
@@ -3612,11 +3825,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
-    elif query.data == "owner_info":
+    elif query.data == "kannada":
         btn = [
             [
-                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/vikranthronaaa"),
+                InlineKeyboardButton("bestk", callback_data="bestk")
+            ],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ],[
+                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
             ]
         ]
         await client.edit_message_media(
